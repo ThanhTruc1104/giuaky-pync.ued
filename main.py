@@ -67,7 +67,7 @@ async def main_page():
         <div class="container">
             <h1>MÔ PHỎNG BIẾN ĐỘNG GIÁ CỔ PHIẾU TRONG 365 NGÀY</h1>
             <p>Học phần: Lập trình Python Nâng cao</p>
-            <p1>Ngành: Khoa học dữ liệu | Khoa: Toán-Tin | Lớp: 25CKDL</p1>
+            <p>Ngành: Khoa học dữ liệu | Khoa: Toán-Tin | Lớp: 25CKDL</p>
             
             <video controls autoplay muted>
                 <source src="/static/mo_phong_chung_khoan.mp4" type="video/mp4">
