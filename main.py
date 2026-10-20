@@ -73,10 +73,6 @@ async def main_page():
                 <source src="/static/mo_phong_chung_khoan.mp4" type="video/mp4">
                 Trình duyệt của bạn không hỗ trợ thẻ video.
             </video>
-            
-            <div class="footer">
-                <p>Triển khai thành công trên nền tảng đám mây Render</p>
-            </div>
         </div>
     </body>
     </html>
