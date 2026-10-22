@@ -717,7 +717,6 @@ async def main_page():
                     </div>
                 </div>
             </div>
-
         </div>
     </body>
     </html>
