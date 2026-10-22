@@ -575,36 +575,61 @@ async def main_page():
                     <span class="p-2.5 bg-purple-100 text-purple-700 rounded-xl font-bold"><i class="fa-regular fa-lightbulb"></i></span>
                     <div>
                         <h2 class="text-xl font-bold text-gray-900">4. Hiện Tượng Kỹ Thuật</h2>
-                        <p class="text-xs text-gray-500">Phân tích chuyên sâu thuật toán mô phỏng và kỹ thuật vẽ đồ thị trong Python</p>
+                        <p class="text-xs text-gray-500">Phân tích chuyên sâu quy tắc phối màu bảng điện và thuật toán đồ thị</p>
                     </div>
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-3">
-                        <div class="flex items-center gap-2 text-purple-600 font-bold text-base">
-                            <i class="fa-solid fa-code"></i>
-                            <span>Mô Phỏng Chuỗi Thời Gian Giá Cổ Phiếu</span>
-                        </div>
-                        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
-                            Mô hình ứng dụng chuỗi hành vi <b>Geometric Brownian Motion (GBM)</b> kết hợp biến ngẫu nhiên tuân theo phân bố chuẩn N(\\mu, \\sigma^2) để sinh tỷ suất sinh lời hàng ngày, đồng thời kết hợp hàm lượng giác để tạo sóng xu hướng mùa vụ tích lũy và bùng nổ giá.
-                        </p>
+                <!-- KHỐI BÁO CÁO GIẢI THÍCH CHI TIẾT HIỆN TƯỢNG -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 space-y-6">
+                    <div class="border-b border-gray-100 pb-4">
+                        <h3 class="text-lg font-extrabold text-gray-900 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-question text-emerald-600"></i>
+                            Giải thích: "Vì sao đường biểu diễn đi xuống nhưng có màu xanh?"
+                        </h3>
                     </div>
-
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-3">
-                        <div class="flex items-center gap-2 text-blue-600 font-bold text-base">
-                            <i class="fa-solid fa-layer-group"></i>
-                            <span>Vẽ Đồ Thị Đa Sắc Liên Tục (`LineCollection`)</span>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- MỤC 1: SO SÁNH VỚI GIÁ THAM CHIẾU -->
+                        <div class="bg-emerald-50/50 rounded-xl p-5 border border-emerald-100 space-y-3">
+                            <div class="flex items-center gap-2 text-emerald-800 font-bold text-sm md:text-base">
+                                <span class="flex items-center justify-center w-6 h-6 bg-emerald-600 text-white rounded-full text-xs">1</span>
+                                <span>So sánh với giá tham chiếu ($P_{ref}$)</span>
+                            </div>
+                            <ul class="text-xs md:text-sm text-gray-700 space-y-2 leading-relaxed pl-2">
+                                <li class="flex items-start gap-1.5">
+                                    <i class="fa-solid fa-angle-right text-emerald-600 mt-1"></i>
+                                    <span><b>Màu xanh lá:</b> Được quy định cho mức giá cao hơn giá tham chiếu ($P > P_{ref}$).</span>
+                                </li>
+                                <li class="flex items-start gap-1.5">
+                                    <i class="fa-solid fa-angle-right text-emerald-600 mt-1"></i>
+                                    <span><b>Giá tham chiếu ($P_{ref}$):</b> Chính là giá đóng cửa của ngày giao dịch trước đó ($P_{close}(t - 1)$).</span>
+                                </li>
+                            </ul>
                         </div>
-                        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
-                            Để đường biểu diễn giá đổi màu liên tục theo quy tắc 5 màu bảng điện (Trần/Tăng/Tham chiếu/Giảm/Sàn) mà không bị đứt đoạn, chương trình áp dụng kỹ thuật tách mảng thành các đoạn ngắn và render bằng `matplotlib.collections.LineCollection`.
+                        <!-- MỤC 2: HIỆN TƯỢNG ĐƯỜNG ĐI XUỐNG CÓ MÀU XANH -->
+                        <div class="bg-blue-50/50 rounded-xl p-5 border border-blue-100 space-y-3">
+                            <div class="flex items-center gap-2 text-blue-800 font-bold text-sm md:text-base">
+                                <span class="flex items-center justify-center w-6 h-6 bg-blue-600 text-white rounded-full text-xs">2</span>
+                                <span>Hiện tượng "Đường đi xuống nhưng vẫn có màu xanh"</span>
+                            </div>
+                            <p class="text-xs md:text-sm text-gray-700 leading-relaxed">
+                                Hiện tượng này xảy ra khi giá đang trong một **xu hướng điều chỉnh/giảm ngắn hạn** (đi xuống từ đỉnh của phiên hoặc của ngày hôm đó), nhưng **mặt bằng giá hiện tại vẫn cao hơn mức giá tham chiếu** của ngày ($P > P_{ref}$).
+                            </p>
+                        </div>
+                    </div>
+                    <!-- THUẬT TOÁN XỬ LÝ LINECOLLECTION -->
+                    <div class="bg-gray-900 text-gray-200 rounded-xl p-4 border border-gray-800 space-y-2 text-xs md:text-sm">
+                        <div class="font-bold text-amber-400 flex items-center gap-2">
+                            <i class="fa-solid fa-code"></i> Tóm tắt xử lý đồ họa trong Python (Matplotlib):
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Màu sắc của mỗi phân đoạn đường không phụ thuộc vào độ dốc âm/dương (đi lên hay đi xuống) của đoạn đó, mà phụ thuộc hoàn toàn vào giá trị $P(t)$ so với $P_{ref}$. Do đó, dù đường biểu diễn đi xuống nhưng thuộc vùng $P(t) > P_{ref}$, mảng màu tô bằng `LineCollection` vẫn được gán mã xanh chuẩn chứng khoán (`#00E676`).
                         </p>
                     </div>
                 </div>
             </div>
-
+            
             <!-- PHẦN 5: KẾT LUẬN & MỞ RỘNG -->
             <div id="section-5" class="space-y-6 pt-6 border-t border-gray-200 pb-10">
-                <div class="flex items-center gap-3">
+                <div class=" items-center gap-3">
                     <span class="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl font-bold"><i class="fa-regular fa-newspaper"></i></span>
                     <div>
                         <h2 class="text-xl font-bold text-gray-900">5. Kết Luận & Mở Rộng</h2>
