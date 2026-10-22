@@ -101,30 +101,30 @@ async def main_page():
                 </div>
             </div>
 
-            <!-- THANH MENU ĐIỀU HƯỚNG TỰ ĐỘNG CUỘN (SCROLL) -->
+            <!-- THANH MENU ĐIỀU HƯỚNG TỰ ĐỘNG CUỘN (ĐÃ ĐỒNG BỘ NỀN XÁM + VIỀN ĐEN DÀNH CHO CẢ 5 NÚT) -->
             <div class="flex flex-wrap gap-3 py-2 overflow-x-auto sticky top-4 z-50 bg-gray-100/90 backdrop-blur p-2 rounded-2xl">
-                <a href="#section-1" class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-400 shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
-                    <i class="fa-solid fa-chart-column text-gray-400 text-xs"></i>
+                <a href="#section-1" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-play text-gray-800 text-xs"></i>
                     <span>1. Mô Phỏng & Quy Tắc</span>
                 </a>
 
-                <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
-                    <i class="fa-solid fa-chart-column text-gray-400 text-xs"></i>
+                <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-chart-column text-gray-800 text-xs"></i>
                     <span>2. Diễn Biến Tháng/Quý</span>
                 </a>
 
-                <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
-                    <i class="fa-solid fa-bars-staggered text-gray-400 text-xs"></i>
+                <a href="#section-3" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-bars-staggered text-gray-800 text-xs"></i>
                     <span>3. Bất Thường & Phân Bố</span>
                 </a>
 
-                <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
-                    <i class="fa-regular fa-lightbulb text-gray-400 text-xs"></i>
+                <a href="#section-4" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-regular fa-lightbulb text-gray-800 text-xs"></i>
                     <span>4. Hiện Tượng Kỹ Thuật</span>
                 </a>
 
-                <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
-                    <i class="fa-regular fa-newspaper text-gray-400 text-xs"></i>
+                <a href="#section-5" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-regular fa-newspaper text-gray-800 text-xs"></i>
                     <span>5. Kết Luận & Mở Rộng</span>
                 </a>
             </div>
@@ -209,10 +209,8 @@ async def main_page():
                     </div>
                 </div>
 
-                <!-- 2 BIỂU ĐỒ THEO THÁNG THU NHỎ XẾP SONGB SONG (GRID 2 CỘT) -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                    
-                    <!-- Biểu đồ 1: Giá Trung Bình Theo Tháng -->
+                    <!-- Biểu đồ 1 -->
                     <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 flex flex-col justify-between space-y-3">
                         <h3 class="text-center font-bold text-white text-sm md:text-base">
                             Giá Trung Bình Mã Cổ Phiếu Theo Tháng
@@ -221,19 +219,14 @@ async def main_page():
                             <svg viewBox="0 0 500 300" class="w-full h-auto text-sky-400 font-sans">
                                 <line x1="50" y1="30" x2="480" y2="30" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="34" fill="#fff" font-size="10" text-anchor="end">50000</text>
-
                                 <line x1="50" y1="80" x2="480" y2="80" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="84" fill="#fff" font-size="10" text-anchor="end">40000</text>
-
                                 <line x1="50" y1="130" x2="480" y2="130" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="134" fill="#fff" font-size="10" text-anchor="end">30000</text>
-
                                 <line x1="50" y1="180" x2="480" y2="180" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="184" fill="#fff" font-size="10" text-anchor="end">20000</text>
-
                                 <line x1="50" y1="230" x2="480" y2="230" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="234" fill="#fff" font-size="10" text-anchor="end">10000</text>
-
                                 <line x1="50" y1="260" x2="480" y2="260" stroke="#fff" stroke-width="1"/>
                                 <text x="42" y="264" fill="#fff" font-size="10" text-anchor="end">0</text>
 
@@ -278,80 +271,39 @@ async def main_page():
                         </div>
                     </div>
 
-                    <!-- Biểu đồ 2: Boxplot Biến Động Giá Mỗi Tháng -->
+                    <!-- Biểu đồ 2: BOXPLOT CHUẨN MẪU GỐC -->
                     <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 flex flex-col justify-between space-y-3">
                         <h3 class="text-center font-bold text-white text-sm md:text-base">
                             Biểu Đồ Hộp (Boxplot) Biến Động Giá Mỗi Tháng
                         </h3>
                         <div class="w-full flex justify-center">
                             <svg viewBox="0 0 500 300" class="w-full h-auto font-sans">
-                                <!-- Đường gióng y-axis -->
                                 <line x1="50" y1="20" x2="480" y2="20" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="24" fill="#fff" font-size="9" text-anchor="end">80000</text>
-
                                 <line x1="50" y1="80" x2="480" y2="80" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="84" fill="#fff" font-size="9" text-anchor="end">60000</text>
-
                                 <line x1="50" y1="140" x2="480" y2="140" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="144" fill="#fff" font-size="9" text-anchor="end">40000</text>
-
                                 <line x1="50" y1="200" x2="480" y2="200" stroke="#444" stroke-dasharray="3,3"/>
                                 <text x="42" y="204" fill="#fff" font-size="9" text-anchor="end">20000</text>
-
                                 <line x1="50" y1="260" x2="480" y2="260" stroke="#fff" stroke-width="1"/>
                                 <text x="42" y="264" fill="#fff" font-size="9" text-anchor="end">0</text>
 
-                                <!-- NHÁNH RÂU (WHISKERS) & CAPS (NẮP ĐẦU/CUỐI) -->
                                 <g stroke="#fff" stroke-width="0.8">
-                                    <!-- T1 -->
-                                    <line x1="68" y1="220" x2="68" y2="240"/>
-                                    <line x1="61" y1="240" x2="75" y2="240"/>
-                                    <!-- T2 -->
-                                    <line x1="103" y1="222" x2="103" y2="248"/>
-                                    <line x1="96" y1="248" x2="110" y2="248"/>
-                                    <!-- T3 -->
-                                    <line x1="138" y1="233" x2="138" y2="249"/>
-                                    <line x1="131" y1="249" x2="145" y2="249"/>
-                                    <!-- T4 -->
-                                    <line x1="173" y1="231" x2="173" y2="247"/>
-                                    <line x1="166" y1="247" x2="180" y2="247"/>
-                                    <!-- T5 -->
-                                    <line x1="208" y1="230" x2="208" y2="247"/>
-                                    <line x1="201" y1="247" x2="215" y2="247"/>
-                                    <!-- T6 -->
-                                    <line x1="243" y1="227" x2="243" y2="244"/>
-                                    <line x1="236" y1="244" x2="250" y2="244"/>
-                                    <!-- T7 -->
-                                    <line x1="278" y1="225" x2="278" y2="243"/>
-                                    <line x1="271" y1="243" x2="285" y2="243"/>
-
-                                    <!-- T8 -->
-                                    <line x1="313" y1="137" x2="313" y2="222"/>
-                                    <line x1="306" y1="137" x2="320" y2="137"/>
-                                    <line x1="306" y1="222" x2="320" y2="222"/>
-
-                                    <!-- T9 -->
-                                    <line x1="348" y1="120" x2="348" y2="177"/>
-                                    <line x1="341" y1="120" x2="355" y2="120"/>
-                                    <line x1="341" y1="177" x2="355" y2="177"/>
-
-                                    <!-- T10 (Râu rất dài) -->
-                                    <line x1="383" y1="10" x2="383" y2="177"/>
-                                    <line x1="376" y1="10" x2="390" y2="10"/>
-                                    <line x1="376" y1="177" x2="390" y2="177"/>
-
-                                    <!-- T11 -->
-                                    <line x1="418" y1="77" x2="418" y2="162"/>
-                                    <line x1="411" y1="77" x2="425" y2="77"/>
-                                    <line x1="411" y1="162" x2="425" y2="162"/>
-
-                                    <!-- T12 -->
-                                    <line x1="453" y1="110" x2="453" y2="200"/>
-                                    <line x1="446" y1="110" x2="460" y2="110"/>
-                                    <line x1="446" y1="200" x2="460" y2="200"/>
+                                    <line x1="68" y1="220" x2="68" y2="240"/><line x1="61" y1="240" x2="75" y2="240"/>
+                                    <line x1="103" y1="222" x2="103" y2="248"/><line x1="96" y1="248" x2="110" y2="248"/>
+                                    <line x1="138" y1="233" x2="138" y2="249"/><line x1="131" y1="249" x2="145" y2="249"/>
+                                    <line x1="173" y1="231" x2="173" y2="247"/><line x1="166" y1="247" x2="180" y2="247"/>
+                                    <line x1="208" y1="230" x2="208" y2="247"/><line x1="201" y1="247" x2="215" y2="247"/>
+                                    <line x1="243" y1="227" x2="243" y2="244"/><line x1="236" y1="244" x2="250" y2="244"/>
+                                    <line x1="278" y1="225" x2="278" y2="243"/><line x1="271" y1="243" x2="285" y2="243"/>
+                                    <line x1="313" y1="137" x2="313" y2="222"/><line x1="306" y1="137" x2="320" y2="137"/><line x1="306" y1="222" x2="320" y2="222"/>
+                                    <line x1="348" y1="120" x2="348" y2="177"/><line x1="341" y1="120" x2="355" y2="120"/><line x1="341" y1="177" x2="355" y2="177"/>
+                                    <line x1="383" y1="10" x2="383" y2="177"/><line x1="376" y1="10" x2="390" y2="10"/><line x1="376" y1="177" x2="390" y2="177"/>
+                                    <line x1="418" y1="77" x2="418" y2="162"/><line x1="411" y1="77" x2="425" y2="77"/><line x1="411" y1="162" x2="425" y2="162"/>
+                                    <line x1="453" y1="110" x2="453" y2="200"/><line x1="446" y1="110" x2="460" y2="110"/><line x1="446" y1="200" x2="460" y2="200"/>
                                 </g>
 
-                                <!-- THÂN HỘP (BOXES) XANH NGỌC `#8edac8` -->
                                 <g stroke="#fff" fill="#8edac8" stroke-width="0.8">
                                     <rect x="58" y="225" width="20" height="8"/>
                                     <rect x="93" y="233" width="20" height="9"/>
@@ -360,7 +312,6 @@ async def main_page():
                                     <rect x="198" y="236" width="20" height="6"/>
                                     <rect x="233" y="233" width="20" height="6"/>
                                     <rect x="268" y="233" width="20" height="7"/>
-
                                     <rect x="303" y="173" width="20" height="34"/>
                                     <rect x="338" y="142" width="20" height="18"/>
                                     <rect x="373" y="73" width="20" height="74"/>
@@ -368,7 +319,6 @@ async def main_page():
                                     <rect x="443" y="146" width="20" height="27"/>
                                 </g>
 
-                                <!-- ĐƯỜNG TRUNG VỊ VÀNG NHẠT (MEDIAN LINES) -->
                                 <g stroke="#ffffb3" stroke-width="1.2">
                                     <line x1="58" y1="229" x2="78" y2="229"/>
                                     <line x1="93" y1="237" x2="113" y2="237"/>
@@ -377,7 +327,6 @@ async def main_page():
                                     <line x1="198" y1="239" x2="218" y2="239"/>
                                     <line x1="233" y1="236" x2="253" y2="236"/>
                                     <line x1="268" y1="236" x2="288" y2="236"/>
-
                                     <line x1="303" y1="196" x2="323" y2="196"/>
                                     <line x1="338" y1="150" x2="358" y2="150"/>
                                     <line x1="373" y1="114" x2="393" y2="114"/>
@@ -385,33 +334,20 @@ async def main_page():
                                     <line x1="443" y1="160" x2="463" y2="160"/>
                                 </g>
 
-                                <!-- ĐIỂM NGOẠI LỆ (OUTLIERS - TRÒN TRẮNG CHÍN XÁC NHƯ MẪU) -->
                                 <g fill="none" stroke="#fff" stroke-width="0.9">
-                                    <!-- T1 -->
                                     <circle cx="68" cy="218" r="2.2"/>
-                                    <!-- T6 -->
                                     <circle cx="243" cy="224" r="2.2"/>
-                                    <!-- T7 -->
-                                    <circle cx="278" cy="218" r="2.2"/>
-                                    <circle cx="278" cy="221" r="2.2"/>
-                                    <!-- T9 -->
+                                    <circle cx="278" cy="218" r="2.2"/><circle cx="278" cy="221" r="2.2"/>
                                     <circle cx="348" cy="113" r="2.2"/>
                                 </g>
 
-                                <!-- NHÃN TRỤC X (T1 -> T12) -->
                                 <g fill="#fff" font-size="9" text-anchor="middle">
-                                    <text x="68" y="275">T1</text>
-                                    <text x="103" y="275">T2</text>
-                                    <text x="138" y="275">T3</text>
-                                    <text x="173" y="275">T4</text>
-                                    <text x="208" y="275">T5</text>
-                                    <text x="243" y="275">T6</text>
-                                    <text x="278" y="275">T7</text>
-                                    <text x="313" y="275">T8</text>
-                                    <text x="348" y="275">T9</text>
-                                    <text x="383" y="275">T10</text>
-                                    <text x="418" y="275">T11</text>
-                                    <text x="453" y="275">T12</text>
+                                    <text x="68" y="275">T1</text><text x="103" y="275">T2</text>
+                                    <text x="138" y="275">T3</text><text x="173" y="275">T4</text>
+                                    <text x="208" y="275">T5</text><text x="243" y="275">T6</text>
+                                    <text x="278" y="275">T7</text><text x="313" y="275">T8</text>
+                                    <text x="348" y="275">T9</text><text x="383" y="275">T10</text>
+                                    <text x="418" y="275">T11</text><text x="453" y="275">T12</text>
                                 </g>
                             </svg>
                         </div>
@@ -424,12 +360,11 @@ async def main_page():
                             <p>• Các điểm tròn nhỏ đại diện cho phiên ngoại lệ (Outliers).</p>
                         </div>
                     </div>
-
                 </div>
-                <!-- 3. BIỂU ĐỒ PHÂN BỐ GIÁ QUÝ GIỮ NGUYÊN BẢN GỐC -->
+
+                <!-- PHÂN BỐ GIÁ QUÝ GỐC -->
                 <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Q1 + Q2 GỐC -->
                         <div class="space-y-2">
                             <h4 class="text-center font-bold text-white text-sm md:text-base">
                                 Phân Bố Giá 2 Quý Đầu Năm (Q1 + Q2)
@@ -438,16 +373,12 @@ async def main_page():
                                 <svg viewBox="0 0 500 300" class="w-full h-auto">
                                     <line x1="50" y1="40" x2="470" y2="40" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="44" fill="#fff" font-size="10" text-anchor="end">120</text>
-
                                     <line x1="50" y1="95" x2="470" y2="95" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="99" fill="#fff" font-size="10" text-anchor="end">100</text>
-
                                     <line x1="50" y1="150" x2="470" y2="150" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="154" fill="#fff" font-size="10" text-anchor="end">80</text>
-
                                     <line x1="50" y1="205" x2="470" y2="205" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="209" fill="#fff" font-size="10" text-anchor="end">60</text>
-
                                     <line x1="50" y1="260" x2="470" y2="260" stroke="#fff" stroke-width="1"/>
                                     <text x="42" y="264" fill="#fff" font-size="10" text-anchor="end">0</text>
 
@@ -480,7 +411,6 @@ async def main_page():
                             </div>
                         </div>
 
-                        <!-- Q3 + Q4 GỐC -->
                         <div class="space-y-2">
                             <h4 class="text-center font-bold text-white text-sm md:text-base">
                                 Phân Bố Giá 2 Quý Cuối Năm (Q3 + Q4)
@@ -489,16 +419,12 @@ async def main_page():
                                 <svg viewBox="0 0 500 300" class="w-full h-auto">
                                     <line x1="50" y1="40" x2="470" y2="40" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="44" fill="#fff" font-size="10" text-anchor="end">160</text>
-
                                     <line x1="50" y1="95" x2="470" y2="95" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="99" fill="#fff" font-size="10" text-anchor="end">120</text>
-
                                     <line x1="50" y1="150" x2="470" y2="150" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="154" fill="#fff" font-size="10" text-anchor="end">80</text>
-
                                     <line x1="50" y1="205" x2="470" y2="205" stroke="#333" stroke-dasharray="3,3"/>
                                     <text x="42" y="209" fill="#fff" font-size="10" text-anchor="end">40</text>
-
                                     <line x1="50" y1="260" x2="470" y2="260" stroke="#fff" stroke-width="1"/>
                                     <text x="42" y="264" fill="#fff" font-size="10" text-anchor="end">0</text>
 
@@ -530,7 +456,6 @@ async def main_page():
                         </div>
                     </div>
 
-                    <!-- LỜI GIẢI THÍCH DƯỚI BẢN GỐC -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                         <div class="bg-gray-900/90 p-3.5 rounded-xl border border-gray-800 text-xs text-gray-300 leading-relaxed">
                             <span class="font-bold text-teal-400">Đặc điểm Q1 + Q2:</span> Phân bố chuẩn dạng hình chuông, tập trung chủ yếu quanh tần suất giá <b>6.000 – 8.000 VNĐ</b>.
@@ -540,9 +465,9 @@ async def main_page():
                         </div>
                     </div>
                 </div>
-
             </div>
-            <!-- PHẦN 3: BẤT THƯỜNG & PHÂN BỐ (BẤM VÀO MỤC 3 SẼ CUỘN XUỐNG ĐÂY) -->
+
+            <!-- PHẦN 3: BẤT THƯỜNG & PHÂN BỐ -->
             <div id="section-3" class="space-y-6 pt-6 border-t border-gray-200">
                 <div class="flex items-center gap-3">
                     <span class="p-2.5 bg-amber-100 text-amber-700 rounded-xl font-bold"><i class="fa-solid fa-bars-staggered"></i></span>
@@ -552,7 +477,7 @@ async def main_page():
                     </div>
                 </div>
 
-                <!-- BẢNG THỐNG KÊ CÁC PHIÊN GIAO DỊCH BẤT THƯỜNG -->
+                <!-- BẢNG THỐNG KÊ PHIÊN BẤT THƯỜNG -->
                 <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-4 overflow-hidden">
                     <h3 class="text-center font-bold text-white text-base md:text-lg">
                         THỐNG KÊ CÁC PHIÊN GIAO DỊCH BẤT THƯỜNG (Hiển thị 15/363 ngày đầu)
@@ -599,7 +524,7 @@ async def main_page():
                     </div>
                 </div>
 
-                <!-- BIỂU ĐỒ SO SÁNH NGUYÊN BẢN CÂN ĐỐI (363 NGÀY BẤT THƯỜNG / 2 NGÀY BÌNH THƯỜNG) -->
+                <!-- BIỂU ĐỒ SO SÁNH BẤT THƯỜNG -->
                 <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-4 max-w-4xl mx-auto">
                     <h3 class="text-center font-bold text-white text-base md:text-lg">
                         So sánh số lượng ngày giao dịch BÌNH THƯỜNG và BẤT THƯỜNG (365 Ngày)
@@ -609,33 +534,25 @@ async def main_page():
                         <svg viewBox="0 0 700 380" class="w-full max-w-2xl h-auto font-sans">
                             <line x1="60" y1="40" x2="660" y2="40" stroke="#333" stroke-dasharray="3,3"/>
                             <text x="50" y="44" fill="#fff" font-size="11" text-anchor="end">400</text>
-
                             <line x1="60" y1="105" x2="660" y2="105" stroke="#333" stroke-dasharray="3,3"/>
                             <text x="50" y="109" fill="#fff" font-size="11" text-anchor="end">350</text>
-
                             <line x1="60" y1="170" x2="660" y2="170" stroke="#333" stroke-dasharray="3,3"/>
                             <text x="50" y="174" fill="#fff" font-size="11" text-anchor="end">300</text>
-
                             <line x1="60" y1="235" x2="660" y2="235" stroke="#333" stroke-dasharray="3,3"/>
                             <text x="50" y="239" fill="#fff" font-size="11" text-anchor="end">200</text>
-
                             <line x1="60" y1="300" x2="660" y2="300" stroke="#333" stroke-dasharray="3,3"/>
                             <text x="50" y="304" fill="#fff" font-size="11" text-anchor="end">100</text>
-
                             <line x1="60" y1="330" x2="660" y2="330" stroke="#fff" stroke-width="1.5"/>
                             <text x="50" y="334" fill="#fff" font-size="11" text-anchor="end">0</text>
 
-                            <!-- Cột Ngày bình thường (2 ngày - 0.5%) -->
                             <rect x="110" y="328" width="160" height="2" fill="#8edac8" stroke="#fff" stroke-width="1"/>
                             <text x="190" y="300" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">2 ngày</text>
                             <text x="190" y="318" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">(0.5%)</text>
 
-                            <!-- Cột Ngày bất thường (363 ngày - 99.5%) -->
                             <rect x="450" y="70" width="180" height="260" fill="#d9534f" stroke="#fff" stroke-width="1"/>
                             <text x="540" y="42" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">363 ngày</text>
                             <text x="540" y="60" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">(99.5%)</text>
 
-                            <!-- Trục X -->
                             <text x="190" y="355" fill="#fff" font-size="12" text-anchor="middle">Ngày bình thường</text>
                             <text x="540" y="355" fill="#fff" font-size="12" text-anchor="middle">Ngày bất thường</text>
                             <text x="15" y="180" fill="#fff" font-size="11" text-anchor="middle" transform="rotate(-90 15 180)">Số lượng phiên giao dịch (Ngày)</text>
@@ -649,7 +566,9 @@ async def main_page():
                         <p>Trong 365 ngày giao dịch mô phỏng, có đến <b>363 ngày (chiếm 99.5%)</b> xuất hiện hiện tượng chạm giá trần hoặc chạm giá sàn trong phiên, chỉ có duy nhất <b>2 ngày (0.5%)</b> dao động biến động bình thường trong biên độ cho phép.</p>
                     </div>
                 </div>
+
             </div>
+
             <!-- PHẦN 4: HIỆN TƯỢNG KỸ THUẬT -->
             <div id="section-4" class="space-y-6 pt-6 border-t border-gray-200">
                 <div class="flex items-center gap-3">
@@ -661,7 +580,6 @@ async def main_page():
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Khối Kỹ Thuật 1 -->
                     <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-3">
                         <div class="flex items-center gap-2 text-purple-600 font-bold text-base">
                             <i class="fa-solid fa-code"></i>
@@ -672,7 +590,6 @@ async def main_page():
                         </p>
                     </div>
 
-                    <!-- Khối Kỹ Thuật 2 -->
                     <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-3">
                         <div class="flex items-center gap-2 text-blue-600 font-bold text-base">
                             <i class="fa-solid fa-layer-group"></i>
@@ -717,6 +634,7 @@ async def main_page():
                     </div>
                 </div>
             </div>
+
         </div>
     </body>
     </html>
