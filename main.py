@@ -48,7 +48,7 @@ async def main_page():
                     </div>
                     <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-sm shadow-inner">
                         TT
-                    <div>
+                    </div>
                 </div>
             </div>
 
