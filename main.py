@@ -209,217 +209,207 @@ async def main_page():
                     </div>
                 </div>
 
-                <!-- 1. Biểu đồ cột: Giá trung bình theo tháng -->
-                <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-4">
-                    <h3 class="text-center font-bold text-white text-base md:text-lg">
-                        Giá Trung Bình Mã Cổ Phiếu Theo Tháng
-                    </h3>
-                    <div class="w-full flex justify-center">
-                        <svg viewBox="0 0 1000 500" class="w-full h-auto text-sky-400 font-sans">
-                            <line x1="80" y1="50" x2="950" y2="50" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="55" fill="#fff" font-size="12" text-anchor="end">50000</text>
+                <!-- 2 BIỂU ĐỒ THEO THÁNG NGANG HÀNG NHAU (GRID 2 CỘT) -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    
+                    <!-- Biểu đồ 1: Giá Trung Bình Theo Tháng -->
+                    <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 flex flex-col justify-between space-y-3">
+                        <h3 class="text-center font-bold text-white text-sm md:text-base">
+                            Giá Trung Bình Mã Cổ Phiếu Theo Tháng
+                        </h3>
+                        <div class="w-full flex justify-center">
+                            <svg viewBox="0 0 500 300" class="w-full h-auto text-sky-400 font-sans">
+                                <line x1="50" y1="30" x2="480" y2="30" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="34" fill="#fff" font-size="10" text-anchor="end">50000</text>
 
-                            <line x1="80" y1="140" x2="950" y2="140" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="145" fill="#fff" font-size="12" text-anchor="end">40000</text>
+                                <line x1="50" y1="80" x2="480" y2="80" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="84" fill="#fff" font-size="10" text-anchor="end">40000</text>
 
-                            <line x1="80" y1="230" x2="950" y2="230" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="235" fill="#fff" font-size="12" text-anchor="end">30000</text>
+                                <line x1="50" y1="130" x2="480" y2="130" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="134" fill="#fff" font-size="10" text-anchor="end">30000</text>
 
-                            <line x1="80" y1="320" x2="950" y2="320" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="325" fill="#fff" font-size="12" text-anchor="end">20000</text>
+                                <line x1="50" y1="180" x2="480" y2="180" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="184" fill="#fff" font-size="10" text-anchor="end">20000</text>
 
-                            <line x1="80" y1="410" x2="950" y2="410" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="415" fill="#fff" font-size="12" text-anchor="end">10000</text>
+                                <line x1="50" y1="230" x2="480" y2="230" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="234" fill="#fff" font-size="10" text-anchor="end">10000</text>
 
-                            <line x1="80" y1="450" x2="950" y2="450" stroke="#fff" stroke-width="1.5"/>
-                            <text x="70" y="455" fill="#fff" font-size="12" text-anchor="end">0</text>
+                                <line x1="50" y1="260" x2="480" y2="260" stroke="#fff" stroke-width="1"/>
+                                <text x="42" y="264" fill="#fff" font-size="10" text-anchor="end">0</text>
 
-                            <g fill="#87ceeb">
-                                <rect x="100" y="357" width="55" height="93" rx="2"/>
-                                <rect x="172" y="384" width="55" height="66" rx="2"/>
-                                <rect x="244" y="396" width="55" height="54" rx="2"/>
-                                <rect x="316" y="391" width="55" height="59" rx="2"/>
-                                <rect x="388" y="391" width="55" height="59" rx="2"/>
-                                <rect x="460" y="377" width="55" height="73" rx="2"/>
-                                <rect x="532" y="375" width="55" height="75" rx="2"/>
-                                <rect x="604" y="242" width="55" height="208" rx="2"/>
-                                <rect x="676" y="119" width="55" height="331" rx="2"/>
-                                <rect x="748" y="44" width="55" height="406" rx="2"/>
-                                <rect x="820" y="96" width="55" height="354" rx="2"/>
-                                <rect x="892" y="149" width="55" height="301" rx="2"/>
-                            </g>
+                                <g fill="#87ceeb">
+                                    <rect x="60" y="200" width="26" height="60" rx="1"/>
+                                    <rect x="95" y="218" width="26" height="42" rx="1"/>
+                                    <rect x="130" y="225" width="26" height="35" rx="1"/>
+                                    <rect x="165" y="222" width="26" height="38" rx="1"/>
+                                    <rect x="200" y="222" width="26" height="38" rx="1"/>
+                                    <rect x="235" y="213" width="26" height="47" rx="1"/>
+                                    <rect x="270" y="212" width="26" height="48" rx="1"/>
+                                    <rect x="305" y="138" width="26" height="122" rx="1"/>
+                                    <rect x="340" y="70" width="26" height="190" rx="1"/>
+                                    <rect x="375" y="26" width="26" height="234" rx="1"/>
+                                    <rect x="410" y="55" width="26" height="205" rx="1"/>
+                                    <rect x="445" y="88" width="26" height="172" rx="1"/>
+                                </g>
 
-                            <g fill="#fff" font-size="13" text-anchor="end">
-                                <text x="135" y="475" transform="rotate(-45 135 475)">Tháng 1</text>
-                                <text x="207" y="475" transform="rotate(-45 207 475)">Tháng 2</text>
-                                <text x="279" y="475" transform="rotate(-45 279 475)">Tháng 3</text>
-                                <text x="351" y="475" transform="rotate(-45 351 475)">Tháng 4</text>
-                                <text x="423" y="475" transform="rotate(-45 423 475)">Tháng 5</text>
-                                <text x="495" y="475" transform="rotate(-45 495 475)">Tháng 6</text>
-                                <text x="567" y="475" transform="rotate(-45 567 475)">Tháng 7</text>
-                                <text x="639" y="475" transform="rotate(-45 639 475)">Tháng 8</text>
-                                <text x="711" y="475" transform="rotate(-45 711 475)">Tháng 9</text>
-                                <text x="783" y="475" transform="rotate(-45 783 475)">Tháng 10</text>
-                                <text x="855" y="475" transform="rotate(-45 855 475)">Tháng 11</text>
-                                <text x="927" y="475" transform="rotate(-45 927 475)">Tháng 12</text>
-                            </g>
-                        </svg>
+                                <g fill="#fff" font-size="9" text-anchor="end">
+                                    <text x="73" y="275" transform="rotate(-45 73 275)">T1</text>
+                                    <text x="108" y="275" transform="rotate(-45 108 275)">T2</text>
+                                    <text x="143" y="275" transform="rotate(-45 143 275)">T3</text>
+                                    <text x="178" y="275" transform="rotate(-45 178 275)">T4</text>
+                                    <text x="213" y="275" transform="rotate(-45 213 275)">T5</text>
+                                    <text x="248" y="275" transform="rotate(-45 248 275)">T6</text>
+                                    <text x="283" y="275" transform="rotate(-45 283 275)">T7</text>
+                                    <text x="318" y="275" transform="rotate(-45 318 275)">T8</text>
+                                    <text x="353" y="275" transform="rotate(-45 353 275)">T9</text>
+                                    <text x="388" y="275" transform="rotate(-45 388 275)">T10</text>
+                                    <text x="423" y="275" transform="rotate(-45 423 275)">T11</text>
+                                    <text x="458" y="275" transform="rotate(-45 458 275)">T12</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-xs text-gray-300 leading-relaxed space-y-1">
+                            <p class="font-semibold text-sky-400 flex items-center gap-1.5">
+                                <i class="fa-solid fa-circle-info"></i> Xu hướng giá:
+                            </p>
+                            <p>• <b>Tích lũy (T1–T7):</b> Giá đi ngang dưới 10k VNĐ.</p>
+                            <p>• <b>Bùng nổ (T8–T10):</b> Tăng phi mã, đỉnh T10 >50k VNĐ.</p>
+                            <p>• <b>Điều chỉnh (T11–T12):</b> Giảm dần về ~33k VNĐ.</p>
+                        </div>
                     </div>
 
-                    <!-- Lời giải thích cho Biểu đồ 1 -->
-                    <div class="bg-gray-900/90 p-4 rounded-xl border border-gray-800 text-xs md:text-sm text-gray-300 space-y-1.5 leading-relaxed">
-                        <p class="font-semibold text-sky-400 flex items-center gap-2">
-                            <i class="fa-solid fa-circle-info"></i> Nhận xét & Phân tích xu hướng:
-                        </p>
-                        <p>
-                            • <b>Giai đoạn tích lũy (Tháng 1 - Tháng 7):</b> Mức giá trung bình duy trì ổn định ở vùng giá thấp dưới 10.000 VNĐ, giá giao dịch dao động đi ngang (sideway).
-                        </p>
-                        <p>
-                            • <b>Giai đoạn bùng nổ (Tháng 8 - Tháng 10):</b> Giá cổ phiếu bước vào sóng tăng trưởng mạnh mẽ (uptrend), đạt đỉnh kỷ lục vào <b>Tháng 10</b> với mức giá trung bình vượt <b>50.000 VNĐ</b>.
-                        </p>
-                        <p>
-                            • <b>Giai đoạn điều chỉnh (Tháng 11 - Tháng 12):</b> Xuất hiện áp lực chốt lời khiến giá trung bình giảm dần về mức ~33.000 VNĐ cuối năm.
-                        </p>
+                    <!-- Biểu đồ 2: Boxplot Biến Động Giá Mỗi Tháng -->
+                    <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 flex flex-col justify-between space-y-3">
+                        <h3 class="text-center font-bold text-white text-sm md:text-base">
+                            Biểu Đồ Hộp (Boxplot) Biến Động Giá Mỗi Tháng
+                        </h3>
+                        <div class="w-full flex justify-center">
+                            <svg viewBox="0 0 500 300" class="w-full h-auto font-sans">
+                                <line x1="50" y1="30" x2="480" y2="30" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="34" fill="#fff" font-size="10" text-anchor="end">80000</text>
+
+                                <line x1="50" y1="90" x2="480" y2="90" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="94" fill="#fff" font-size="10" text-anchor="end">60000</text>
+
+                                <line x1="50" y1="150" x2="480" y2="150" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="154" fill="#fff" font-size="10" text-anchor="end">40000</text>
+
+                                <line x1="50" y1="210" x2="480" y2="210" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="214" fill="#fff" font-size="10" text-anchor="end">20000</text>
+
+                                <line x1="50" y1="260" x2="480" y2="260" stroke="#fff" stroke-width="1"/>
+                                <text x="42" y="264" fill="#fff" font-size="10" text-anchor="end">0</text>
+
+                                <g stroke="#fff" fill="#8edac8" stroke-width="0.8">
+                                    <rect x="62" y="225" width="20" height="10"/>
+                                    <rect x="97" y="235" width="20" height="10"/>
+                                    <rect x="132" y="240" width="20" height="8"/>
+                                    <rect x="167" y="238" width="20" height="8"/>
+                                    <rect x="202" y="238" width="20" height="8"/>
+                                    <rect x="237" y="235" width="20" height="10"/>
+                                    <rect x="272" y="235" width="20" height="10"/>
+
+                                    <rect x="307" y="175" width="20" height="35"/>
+                                    <rect x="342" y="145" width="20" height="20"/>
+                                    <rect x="377" y="75" width="20" height="75"/>
+                                    <rect x="412" y="115" width="20" height="30"/>
+                                    <rect x="447" y="150" width="20" height="30"/>
+                                </g>
+
+                                <g fill="#fff" font-size="9" text-anchor="middle">
+                                    <text x="72" y="275">T1</text>
+                                    <text x="107" y="275">T2</text>
+                                    <text x="142" y="275">T3</text>
+                                    <text x="177" y="275">T4</text>
+                                    <text x="212" y="275">T5</text>
+                                    <text x="247" y="275">T6</text>
+                                    <text x="282" y="275">T7</text>
+                                    <text x="317" y="275">T8</text>
+                                    <text x="352" y="275">T9</text>
+                                    <text x="387" y="275">T10</text>
+                                    <text x="422" y="275">T11</text>
+                                    <text x="457" y="275">T12</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-xs text-gray-300 leading-relaxed space-y-1">
+                            <p class="font-semibold text-teal-300 flex items-center gap-1.5">
+                                <i class="fa-solid fa-chart-line"></i> Độ biến động giá:
+                            </p>
+                            <p>• <b>T1–T7:</b> Hộp hẹp, rủi ro biến động giá thấp.</p>
+                            <p>• <b>T10:</b> Hộp dài nhất (28k–89k VNĐ), độ rung lắc cực đại.</p>
+                            <p>• Xuất hiện điểm ngoại lệ (outliers) trong các tháng sóng tăng.</p>
+                        </div>
                     </div>
+
                 </div>
 
-                <!-- 2. Biểu đồ Boxplot -->
-                <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-4">
-                    <h3 class="text-center font-bold text-white text-base md:text-lg">
-                        Biểu Đồ Hộp (Boxplot) Biến Động Giá Mỗi Tháng
-                    </h3>
-                    <div class="w-full flex justify-center">
-                        <svg viewBox="0 0 1000 500" class="w-full h-auto">
-                            <line x1="80" y1="50" x2="950" y2="50" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="55" fill="#fff" font-size="12" text-anchor="end">80000</text>
-
-                            <line x1="80" y1="150" x2="950" y2="150" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="155" fill="#fff" font-size="12" text-anchor="end">60000</text>
-
-                            <line x1="80" y1="250" x2="950" y2="250" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="255" fill="#fff" font-size="12" text-anchor="end">40000</text>
-
-                            <line x1="80" y1="350" x2="950" y2="350" stroke="#444" stroke-dasharray="4,4"/>
-                            <text x="70" y="355" fill="#fff" font-size="12" text-anchor="end">20000</text>
-
-                            <line x1="80" y1="450" x2="950" y2="450" stroke="#fff" stroke-width="1.5"/>
-                            <text x="70" y="455" fill="#fff" font-size="12" text-anchor="end">0</text>
-
-                            <g stroke="#fff" fill="#8edac8" stroke-width="1">
-                                <rect x="110" y="390" width="40" height="15" />
-                                <rect x="182" y="405" width="40" height="15" />
-                                <rect x="254" y="415" width="40" height="12" />
-                                <rect x="326" y="412" width="40" height="12" />
-                                <rect x="398" y="412" width="40" height="12" />
-                                <rect x="470" y="405" width="40" height="15" />
-                                <rect x="542" y="405" width="40" height="15" />
-
-                                <rect x="614" y="305" width="40" height="58" />
-                                <rect x="686" y="250" width="40" height="30" />
-                                <rect x="758" y="135" width="40" height="120" />
-                                <rect x="830" y="200" width="40" height="45" />
-                                <rect x="902" y="255" width="40" height="45" />
-                            </g>
-
-                            <g fill="#fff" font-size="13" text-anchor="middle">
-                                <text x="130" y="475">T1</text>
-                                <text x="202" y="475">T2</text>
-                                <text x="274" y="475">T3</text>
-                                <text x="346" y="475">T4</text>
-                                <text x="418" y="475">T5</text>
-                                <text x="490" y="475">T6</text>
-                                <text x="562" y="475">T7</text>
-                                <text x="634" y="475">T8</text>
-                                <text x="706" y="475">T9</text>
-                                <text x="778" y="475">T10</text>
-                                <text x="850" y="475">T11</text>
-                                <text x="922" y="475">T12</text>
-                            </g>
-                        </svg>
-                    </div>
-
-                    <!-- Lời giải thích cho Biểu đồ 2 -->
-                    <div class="bg-gray-900/90 p-4 rounded-xl border border-gray-800 text-xs md:text-sm text-gray-300 space-y-1.5 leading-relaxed">
-                        <p class="font-semibold text-teal-300 flex items-center gap-2">
-                            <i class="fa-solid fa-chart-line"></i> Phân tích độ biến động (Volatility):
-                        </p>
-                        <p>
-                            • <b>Chiều cao hộp (IQR):</b> Chiều cao thân hộp từ <b>T1 đến T7</b> rất hẹp, cho thấy độ rủi ro và biến động giá theo ngày ở mức thấp.
-                        </p>
-                        <p>
-                            • <b>Độ rộng râu (Whisker) & Ngoại lệ:</b> Khung <b>T10</b> có chiều cao hộp và đường râu kéo dài nhất (từ ~28.000 VNĐ lên hơn 89.000 VNĐ), thể hiện đây là tháng cổ phiếu có độ rung lắc mạnh nhất năm và chứa nhiều điểm giá đột biến (Outliers).
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 3. Biểu đồ Phân Bố Giá 2 Quý Đầu & Cuối Năm -->
+                <!-- 3. Biểu đồ Phân Bố Giá 2 Quý Đầu & Cuối Năm (2 CỘT QUY HOẠCH SẠCH SẼ) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Q1 + Q2 -->
-                    <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-3">
+                    <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 space-y-3">
                         <h4 class="text-center font-bold text-white text-sm md:text-base">
                             Phân Bố Giá 2 Quý Đầu Năm (Q1 + Q2)
                         </h4>
                         <div class="w-full flex justify-center">
-                            <svg viewBox="0 0 500 300" class="w-full h-auto">
+                            <svg viewBox="0 0 500 280" class="w-full h-auto">
                                 <line x1="50" y1="40" x2="470" y2="40" stroke="#333" stroke-dasharray="3,3"/>
                                 <line x1="50" y1="100" x2="470" y2="100" stroke="#333" stroke-dasharray="3,3"/>
                                 <line x1="50" y1="160" x2="470" y2="160" stroke="#333" stroke-dasharray="3,3"/>
                                 <line x1="50" y1="220" x2="470" y2="220" stroke="#333" stroke-dasharray="3,3"/>
-                                <line x1="50" y1="260" x2="470" y2="260" stroke="#fff" stroke-width="1"/>
+                                <line x1="50" y1="250" x2="470" y2="250" stroke="#fff" stroke-width="1"/>
 
                                 <g fill="#005f60" stroke="#000" stroke-width="0.5">
-                                    <rect x="60" y="220" width="18" height="40"/>
-                                    <rect x="80" y="200" width="18" height="60"/>
-                                    <rect x="100" y="150" width="18" height="110"/>
-                                    <rect x="120" y="100" width="18" height="160"/>
-                                    <rect x="140" y="70" width="18" height="190"/>
-                                    <rect x="160" y="40" width="18" height="220"/>
-                                    <rect x="180" y="90" width="18" height="170"/>
-                                    <rect x="200" y="110" width="18" height="150"/>
-                                    <rect x="220" y="130" width="18" height="130"/>
-                                    <rect x="240" y="160" width="18" height="100"/>
-                                    <rect x="260" y="180" width="18" height="80"/>
-                                    <rect x="280" y="200" width="18" height="60"/>
-                                    <rect x="300" y="220" width="18" height="40"/>
+                                    <rect x="60" y="210" width="18" height="40"/>
+                                    <rect x="80" y="190" width="18" height="60"/>
+                                    <rect x="100" y="140" width="18" height="110"/>
+                                    <rect x="120" y="90" width="18" height="160"/>
+                                    <rect x="140" y="60" width="18" height="190"/>
+                                    <rect x="160" y="30" width="18" height="220"/>
+                                    <rect x="180" y="80" width="18" height="170"/>
+                                    <rect x="200" y="100" width="18" height="150"/>
+                                    <rect x="220" y="120" width="18" height="130"/>
+                                    <rect x="240" y="150" width="18" height="100"/>
+                                    <rect x="260" y="170" width="18" height="80"/>
+                                    <rect x="280" y="190" width="18" height="60"/>
+                                    <rect x="300" y="210" width="18" height="40"/>
                                 </g>
                             </svg>
                         </div>
                         <p class="text-xs text-gray-300 leading-relaxed bg-gray-900/90 p-3 rounded-xl border border-gray-800">
-                            <b>Đặc điểm Q1 + Q2:</b> Phân bố dạng hình chuông (Chuẩn - Normal Distribution) tập trung chủ yếu quanh tần suất giá <b>6.000 – 8.000 VNĐ</b>. Không xuất hiện hiện tượng biến động giá bất thường.
+                            <b>Q1 + Q2:</b> Phân bố chuẩn dạng hình chuông, tập trung quanh vùng giá <b>6.000 – 8.000 VNĐ</b>, biến động ổn định.
                         </p>
                     </div>
 
-                    <!-- Q3 + Q4 -->
-                    <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-3">
+                    <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 space-y-3">
                         <h4 class="text-center font-bold text-white text-sm md:text-base">
                             Phân Bố Giá 2 Quý Cuối Năm (Q3 + Q4)
                         </h4>
                         <div class="w-full flex justify-center">
-                            <svg viewBox="0 0 500 300" class="w-full h-auto">
+                            <svg viewBox="0 0 500 280" class="w-full h-auto">
                                 <line x1="50" y1="40" x2="470" y2="40" stroke="#333" stroke-dasharray="3,3"/>
                                 <line x1="50" y1="100" x2="470" y2="100" stroke="#333" stroke-dasharray="3,3"/>
                                 <line x1="50" y1="160" x2="470" y2="160" stroke="#333" stroke-dasharray="3,3"/>
                                 <line x1="50" y1="220" x2="470" y2="220" stroke="#333" stroke-dasharray="3,3"/>
-                                <line x1="50" y1="260" x2="470" y2="260" stroke="#fff" stroke-width="1"/>
+                                <line x1="50" y1="250" x2="470" y2="250" stroke="#fff" stroke-width="1"/>
 
                                 <g fill="#b85333" stroke="#000" stroke-width="0.5">
-                                    <rect x="60" y="50" width="18" height="210"/>
-                                    <rect x="80" y="190" width="18" height="70"/>
-                                    <rect x="100" y="160" width="18" height="100"/>
-                                    <rect x="120" y="180" width="18" height="80"/>
-                                    <rect x="140" y="140" width="18" height="120"/>
-                                    <rect x="160" y="80" width="18" height="180"/>
-                                    <rect x="180" y="60" width="18" height="200"/>
-                                    <rect x="200" y="70" width="18" height="190"/>
-                                    <rect x="220" y="100" width="18" height="160"/>
-                                    <rect x="240" y="150" width="18" height="110"/>
-                                    <rect x="260" y="180" width="18" height="80"/>
-                                    <rect x="280" y="210" width="18" height="50"/>
+                                    <rect x="60" y="40" width="18" height="210"/>
+                                    <rect x="80" y="180" width="18" height="70"/>
+                                    <rect x="100" y="150" width="18" height="100"/>
+                                    <rect x="120" y="170" width="18" height="80"/>
+                                    <rect x="140" y="130" width="18" height="120"/>
+                                    <rect x="160" y="70" width="18" height="180"/>
+                                    <rect x="180" y="50" width="18" height="200"/>
+                                    <rect x="200" y="60" width="18" height="190"/>
+                                    <rect x="220" y="90" width="18" height="160"/>
+                                    <rect x="240" y="140" width="18" height="110"/>
+                                    <rect x="260" y="170" width="18" height="80"/>
+                                    <rect x="280" y="200" width="18" height="50"/>
                                 </g>
                             </svg>
                         </div>
                         <p class="text-xs text-gray-300 leading-relaxed bg-gray-900/90 p-3 rounded-xl border border-gray-800">
-                            <b>Đặc điểm Q3 + Q4:</b> Phân bố bị lệch phải (Right-skewed) kéo dài ra vùng giá cao <b>30.000 – 80.000 VNĐ</b>, phản ánh sự thay đổi về quy mô thị trường và biên độ giá trong nửa cuối năm.
+                            <b>Q3 + Q4:</b> Phân bố lệch phải kéo dài lên vùng giá <b>30.000 – 80.000 VNĐ</b>, thể hiện đợt tăng giá quy mô lớn.
                         </p>
                     </div>
                 </div>
