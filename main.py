@@ -274,7 +274,7 @@ async def main_page():
                     <!-- Biểu đồ 2: BOXPLOT CHUẨN MẪU GỐC -->
                     <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 flex flex-col justify-between space-y-3">
                         <h3 class="text-center font-bold text-white text-sm md:text-base">
-                            Biểu Đồ Hộp (Boxplot) Biến Động Giá Mỗi Tháng
+                            Biến Động Giá Mỗi Tháng
                         </h3>
                         <div class="w-full flex justify-center">
                             <svg viewBox="0 0 500 300" class="w-full h-auto font-sans">
@@ -353,11 +353,11 @@ async def main_page():
                         </div>
                         <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-xs text-gray-300 leading-relaxed space-y-1">
                             <p class="font-semibold text-teal-300 flex items-center gap-1.5">
-                                <i class="fa-solid fa-chart-line"></i> Độ biến động giá (Boxplot):
+                                <i class="fa-solid fa-chart-line"></i> Độ biến động giá:
                             </p>
                             <p>• <b>T1–T7:</b> Thân hộp hẹp dưới 10k, rủi ro biến động rất thấp.</p>
                             <p>• <b>T10:</b> Hộp dài nhất (28k–89k VNĐ), râu cao vượt 89k VNĐ.</p>
-                            <p>• Các điểm tròn nhỏ đại diện cho phiên ngoại lệ (Outliers).</p>
+                            <p>• Các điểm tròn nhỏ đại diện cho phiên ngoại lệ.</p>
                         </div>
                     </div>
                 </div>
