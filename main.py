@@ -46,7 +46,9 @@ async def main_page():
                         <div class="font-bold text-gray-900 text-base">Nguyễn Thị Thanh Trúc</div>
                         <div class="text-xs text-gray-500">Lớp 25CKDL • Khoa Toán - Tin</div>
                     </div>
-                    <img src="/static/ảnh.png" alt="Chibi Avatar" class="w-10 h-10 rounded-full object-cover border border-gray-200 shadow-sm" />
+                    <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-sm shadow-inner">
+                        TT
+                    <div>
                 </div>
             </div>
 
@@ -626,7 +628,7 @@ async def main_page():
             </div>
             
             <!-- PHẦN 5: KẾT LUẬN & MỞ RỘNG -->
-            <div id="section-5" class="space-y-6 pt-6 border-t border-gray-200 pb-10">
+            <div id="section-5" class="space-y-6 pt-6 border-t border-gray-200">
                 <div class=" items-center gap-3">
                     <span class="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl font-bold"><i class="fa-regular fa-newspaper"></i></span>
                     <div>
