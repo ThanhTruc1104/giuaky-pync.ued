@@ -104,6 +104,38 @@ async def main_page():
                     </div>
                 </div>
             </div>
+            <!-- THANH MENU ĐIỀU HƯỚNG 5 MỤC -->
+            <div class="flex flex-wrap gap-3 py-2 overflow-x-auto">
+                <!-- Mục 1: Đang chọn (Active) -->
+                <button class="flex items-center gap-2 bg-slate-200 text-gray-800 font-semibold px-4 py-2.5 rounded-xl text-sm border border-gray-300 shadow-sm transition">
+                    <i class="fa-solid fa-play text-gray-700 text-xs"></i>
+                    <span>1. Mô Phỏng & Quy Tắc</span>
+                </button>
+
+                <!-- Mục 2 -->
+                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
+                    <i class="fa-solid fa-chart-column text-gray-400 text-xs"></i>
+                    <span>2. Diễn Biến Tháng/Quý</span>
+                </button>
+
+                <!-- Mục 3 -->
+                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
+                    <i class="fa-solid fa-[#]"></i> <i class="fa-solid fa-bars-staggered text-gray-400 text-xs"></i>
+                    <span>3. Bất Thường & Phân Bố</span>
+                </button>
+
+                <!-- Mục 4 -->
+                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
+                    <i class="fa-regular fa-lightbulb text-gray-400 text-xs"></i>
+                    <span>4. Hiện Tượng Kỹ Thuật</span>
+                </button>
+
+                <!-- Mục 5 -->
+                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
+                    <i class="fa-regular fa-newspaper text-gray-400 text-xs"></i>
+                    <span>5. Kết Luận & Mở Rộng</span>
+                </button>
+            </div>
 
             <!-- KHUNG VIDEO MÔ PHỎNG -->
             <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
@@ -112,6 +144,70 @@ async def main_page():
                         <source src="/static/mo_phong_chung_khoan.mp4" type="video/mp4">
                         Trình duyệt không hỗ trợ xem video.
                     </video>
+                </div>
+            </div>
+            <!-- KHỐI QUY TẮC 5 MÀU CHỨNG KHOÁN (SAU VIDEO) -->
+            <div class="bg-white/80 backdrop-blur rounded-2xl p-6 shadow-sm border border-gray-100 space-y-4">
+                <div class="space-y-1">
+                    <h2 class="text-lg font-bold text-gray-900 flex items-center gap-2">
+                        <span class="text-amber-500">🎨</span> Quy Tắc 5 Màu Chứng Khoán
+                    </h2>
+                    <p class="text-xs text-gray-500">
+                        Chuẩn màu bảng điện giao dịch chứng khoán áp dụng trong mô phỏng Python:
+                    </p>
+                </div>
+
+                <div class="space-y-2">
+                    <!-- Giá Trần -->
+                    <div class="flex justify-between items-center bg-purple-50/60 p-3.5 rounded-xl border border-purple-100/50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-3.5 h-3.5 rounded-full bg-purple-600 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-sm text-gray-800">Giá Trần (Ceiling)</span>
+                        </div>
+                        <span class="text-xs font-semibold text-purple-700">+10% so với Tham chiếu</span>
+                    </div>
+
+                    <!-- Tăng Giá -->
+                    <div class="flex justify-between items-center bg-emerald-50/60 p-3.5 rounded-xl border border-emerald-100/50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-3.5 h-3.5 rounded-full bg-emerald-500 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-sm text-gray-800">Tăng Giá (Increase)</span>
+                        </div>
+                        <span class="text-xs font-semibold text-emerald-700">Giá đóng > Tham chiếu</span>
+                    </div>
+
+                    <!-- Tham Chiếu -->
+                    <div class="flex justify-between items-center bg-amber-50/60 p-3.5 rounded-xl border border-amber-100/50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-3.5 h-3.5 rounded-full bg-amber-500 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-sm text-gray-800">Tham Chiếu (Reference)</span>
+                        </div>
+                        <span class="text-xs font-semibold text-amber-700">Giá đóng ngày trước ($P_{ref}$)</span>
+                    </div>
+
+                    <!-- Giảm Giá -->
+                    <div class="flex justify-between items-center bg-rose-50/60 p-3.5 rounded-xl border border-rose-100/50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-3.5 h-3.5 rounded-full bg-rose-500 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-sm text-gray-800">Giảm Giá (Decrease)</span>
+                        </div>
+                        <span class="text-xs font-semibold text-rose-700">Giá đóng < Tham chiếu</span>
+                    </div>
+
+                    <!-- Giá Sàn -->
+                    <div class="flex justify-between items-center bg-cyan-50/60 p-3.5 rounded-xl border border-cyan-100/50">
+                        <div class="flex items-center gap-3">
+                            <span class="w-3.5 h-3.5 rounded-full bg-cyan-500 inline-block shadow-sm"></span>
+                            <span class="font-semibold text-sm text-gray-800">Giá Sàn (Floor)</span>
+                        </div>
+                        <span class="text-xs font-semibold text-cyan-700">-10% so với Tham chiếu</span>
+                    </div>
+                </div>
+
+                <!-- Xử Lý Kỹ Thuật -->
+                <div class="pt-2 text-xs text-gray-500 flex items-center gap-2">
+                    <span class="font-mono bg-gray-100 px-1.5 py-0.5 rounded text-gray-700 font-semibold">&lt;/&gt; Xử lý Kỹ thuật:</span>
+                    <span>Sử dụng LineCollection trong Matplotlib để vẽ đồ thị đường đa sắc nối tiếp mượt mà.</span>
                 </div>
             </div>
 
