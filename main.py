@@ -643,11 +643,8 @@ async def main_page():
                     LỜI CẢM ƠN
                 </h3>
                 <p class="text-xs md:text-sm text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                    Em xin chân thành cảm ơn thầy <b>Phan Trần Đức Minh</b> cùng toàn thể Quý Thầy/Cô Khoa Toán - Tin, Trường Đại học Sư phạm – Đại học Đà Nẵng đã tận tình hướng dẫn, hỗ trợ kiến thức chuyên môn và tạo điều kiện giúp em hoàn thành đồ án này!
+                    Em xin chân thành cảm ơn thầy <b>Phan Trần Đức Minh</b> đã tận tình hướng dẫn, hỗ trợ kiến thức chuyên môn và tạo điều kiện giúp em hoàn thành đồ án này!
                 </p>
-                <div class="pt-3 text-xs text-gray-400 font-medium">
-                    © 2026 Nguyễn Thị Thanh Trúc — Lớp 25CKDL • Khoa Toán - Tin
-                </div>
             </div>
 
         </div>
