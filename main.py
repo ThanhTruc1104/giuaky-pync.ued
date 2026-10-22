@@ -103,8 +103,8 @@ async def main_page():
 
             <!-- THANH MENU ĐIỀU HƯỚNG TỰ ĐỘNG CUỘN (SCROLL) -->
             <div class="flex flex-wrap gap-3 py-2 overflow-x-auto sticky top-4 z-50 bg-gray-100/90 backdrop-blur p-2 rounded-2xl">
-                <a href="#section-1" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border border-gray-400 shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
-                    <i class="fa-solid fa-play text-gray-400 text-xs"></i>
+                <a href="#section-1" class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-400 shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-chart-column text-gray-400 text-xs"></i>
                     <span>1. Mô Phỏng & Quy Tắc</span>
                 </a>
 
@@ -285,66 +285,148 @@ async def main_page():
                         </h3>
                         <div class="w-full flex justify-center">
                             <svg viewBox="0 0 500 300" class="w-full h-auto font-sans">
-                                <line x1="50" y1="30" x2="480" y2="30" stroke="#444" stroke-dasharray="3,3"/>
-                                <text x="42" y="34" fill="#fff" font-size="10" text-anchor="end">80000</text>
+                                <!-- Đường gióng y-axis -->
+                                <line x1="50" y1="20" x2="480" y2="20" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="24" fill="#fff" font-size="9" text-anchor="end">80000</text>
 
-                                <line x1="50" y1="90" x2="480" y2="90" stroke="#444" stroke-dasharray="3,3"/>
-                                <text x="42" y="94" fill="#fff" font-size="10" text-anchor="end">60000</text>
+                                <line x1="50" y1="80" x2="480" y2="80" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="84" fill="#fff" font-size="9" text-anchor="end">60000</text>
 
-                                <line x1="50" y1="150" x2="480" y2="150" stroke="#444" stroke-dasharray="3,3"/>
-                                <text x="42" y="154" fill="#fff" font-size="10" text-anchor="end">40000</text>
+                                <line x1="50" y1="140" x2="480" y2="140" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="144" fill="#fff" font-size="9" text-anchor="end">40000</text>
 
-                                <line x1="50" y1="210" x2="480" y2="210" stroke="#444" stroke-dasharray="3,3"/>
-                                <text x="42" y="214" fill="#fff" font-size="10" text-anchor="end">20000</text>
+                                <line x1="50" y1="200" x2="480" y2="200" stroke="#444" stroke-dasharray="3,3"/>
+                                <text x="42" y="204" fill="#fff" font-size="9" text-anchor="end">20000</text>
 
                                 <line x1="50" y1="260" x2="480" y2="260" stroke="#fff" stroke-width="1"/>
-                                <text x="42" y="264" fill="#fff" font-size="10" text-anchor="end">0</text>
+                                <text x="42" y="264" fill="#fff" font-size="9" text-anchor="end">0</text>
 
-                                <g stroke="#fff" fill="#8edac8" stroke-width="0.8">
-                                    <rect x="62" y="225" width="20" height="10"/>
-                                    <rect x="97" y="235" width="20" height="10"/>
-                                    <rect x="132" y="240" width="20" height="8"/>
-                                    <rect x="167" y="238" width="20" height="8"/>
-                                    <rect x="202" y="238" width="20" height="8"/>
-                                    <rect x="237" y="235" width="20" height="10"/>
-                                    <rect x="272" y="235" width="20" height="10"/>
+                                <!-- NHÁNH RÂU (WHISKERS) & CAPS (NẮP ĐẦU/CUỐI) -->
+                                <g stroke="#fff" stroke-width="0.8">
+                                    <!-- T1 -->
+                                    <line x1="68" y1="220" x2="68" y2="240"/>
+                                    <line x1="61" y1="240" x2="75" y2="240"/>
+                                    <!-- T2 -->
+                                    <line x1="103" y1="222" x2="103" y2="248"/>
+                                    <line x1="96" y1="248" x2="110" y2="248"/>
+                                    <!-- T3 -->
+                                    <line x1="138" y1="233" x2="138" y2="249"/>
+                                    <line x1="131" y1="249" x2="145" y2="249"/>
+                                    <!-- T4 -->
+                                    <line x1="173" y1="231" x2="173" y2="247"/>
+                                    <line x1="166" y1="247" x2="180" y2="247"/>
+                                    <!-- T5 -->
+                                    <line x1="208" y1="230" x2="208" y2="247"/>
+                                    <line x1="201" y1="247" x2="215" y2="247"/>
+                                    <!-- T6 -->
+                                    <line x1="243" y1="227" x2="243" y2="244"/>
+                                    <line x1="236" y1="244" x2="250" y2="244"/>
+                                    <!-- T7 -->
+                                    <line x1="278" y1="225" x2="278" y2="243"/>
+                                    <line x1="271" y1="243" x2="285" y2="243"/>
 
-                                    <rect x="307" y="175" width="20" height="35"/>
-                                    <rect x="342" y="145" width="20" height="20"/>
-                                    <rect x="377" y="75" width="20" height="75"/>
-                                    <rect x="412" y="115" width="20" height="30"/>
-                                    <rect x="447" y="150" width="20" height="30"/>
+                                    <!-- T8 -->
+                                    <line x1="313" y1="137" x2="313" y2="222"/>
+                                    <line x1="306" y1="137" x2="320" y2="137"/>
+                                    <line x1="306" y1="222" x2="320" y2="222"/>
+
+                                    <!-- T9 -->
+                                    <line x1="348" y1="120" x2="348" y2="177"/>
+                                    <line x1="341" y1="120" x2="355" y2="120"/>
+                                    <line x1="341" y1="177" x2="355" y2="177"/>
+
+                                    <!-- T10 (Râu rất dài) -->
+                                    <line x1="383" y1="10" x2="383" y2="177"/>
+                                    <line x1="376" y1="10" x2="390" y2="10"/>
+                                    <line x1="376" y1="177" x2="390" y2="177"/>
+
+                                    <!-- T11 -->
+                                    <line x1="418" y1="77" x2="418" y2="162"/>
+                                    <line x1="411" y1="77" x2="425" y2="77"/>
+                                    <line x1="411" y1="162" x2="425" y2="162"/>
+
+                                    <!-- T12 -->
+                                    <line x1="453" y1="110" x2="453" y2="200"/>
+                                    <line x1="446" y1="110" x2="460" y2="110"/>
+                                    <line x1="446" y1="200" x2="460" y2="200"/>
                                 </g>
 
+                                <!-- THÂN HỘP (BOXES) XANH NGỌC `#8edac8` -->
+                                <g stroke="#fff" fill="#8edac8" stroke-width="0.8">
+                                    <rect x="58" y="225" width="20" height="8"/>
+                                    <rect x="93" y="233" width="20" height="9"/>
+                                    <rect x="128" y="238" width="20" height="7"/>
+                                    <rect x="163" y="236" width="20" height="6"/>
+                                    <rect x="198" y="236" width="20" height="6"/>
+                                    <rect x="233" y="233" width="20" height="6"/>
+                                    <rect x="268" y="233" width="20" height="7"/>
+
+                                    <rect x="303" y="173" width="20" height="34"/>
+                                    <rect x="338" y="142" width="20" height="18"/>
+                                    <rect x="373" y="73" width="20" height="74"/>
+                                    <rect x="408" y="117" width="20" height="27"/>
+                                    <rect x="443" y="146" width="20" height="27"/>
+                                </g>
+
+                                <!-- ĐƯỜNG TRUNG VỊ VÀNG NHẠT (MEDIAN LINES) -->
+                                <g stroke="#ffffb3" stroke-width="1.2">
+                                    <line x1="58" y1="229" x2="78" y2="229"/>
+                                    <line x1="93" y1="237" x2="113" y2="237"/>
+                                    <line x1="128" y1="241" x2="148" y2="241"/>
+                                    <line x1="163" y1="239" x2="183" y2="239"/>
+                                    <line x1="198" y1="239" x2="218" y2="239"/>
+                                    <line x1="233" y1="236" x2="253" y2="236"/>
+                                    <line x1="268" y1="236" x2="288" y2="236"/>
+
+                                    <line x1="303" y1="196" x2="323" y2="196"/>
+                                    <line x1="338" y1="150" x2="358" y2="150"/>
+                                    <line x1="373" y1="114" x2="393" y2="114"/>
+                                    <line x1="408" y1="125" x2="428" y2="125"/>
+                                    <line x1="443" y1="160" x2="463" y2="160"/>
+                                </g>
+
+                                <!-- ĐIỂM NGOẠI LỆ (OUTLIERS - TRÒN TRẮNG CHÍN XÁC NHƯ MẪU) -->
+                                <g fill="none" stroke="#fff" stroke-width="0.9">
+                                    <!-- T1 -->
+                                    <circle cx="68" cy="218" r="2.2"/>
+                                    <!-- T6 -->
+                                    <circle cx="243" cy="224" r="2.2"/>
+                                    <!-- T7 -->
+                                    <circle cx="278" cy="218" r="2.2"/>
+                                    <circle cx="278" cy="221" r="2.2"/>
+                                    <!-- T9 -->
+                                    <circle cx="348" cy="113" r="2.2"/>
+                                </g>
+
+                                <!-- NHÃN TRỤC X (T1 -> T12) -->
                                 <g fill="#fff" font-size="9" text-anchor="middle">
-                                    <text x="72" y="275">T1</text>
-                                    <text x="107" y="275">T2</text>
-                                    <text x="142" y="275">T3</text>
-                                    <text x="177" y="275">T4</text>
-                                    <text x="212" y="275">T5</text>
-                                    <text x="247" y="275">T6</text>
-                                    <text x="282" y="275">T7</text>
-                                    <text x="317" y="275">T8</text>
-                                    <text x="352" y="275">T9</text>
-                                    <text x="387" y="275">T10</text>
-                                    <text x="422" y="275">T11</text>
-                                    <text x="457" y="275">T12</text>
+                                    <text x="68" y="275">T1</text>
+                                    <text x="103" y="275">T2</text>
+                                    <text x="138" y="275">T3</text>
+                                    <text x="173" y="275">T4</text>
+                                    <text x="208" y="275">T5</text>
+                                    <text x="243" y="275">T6</text>
+                                    <text x="278" y="275">T7</text>
+                                    <text x="313" y="275">T8</text>
+                                    <text x="348" y="275">T9</text>
+                                    <text x="383" y="275">T10</text>
+                                    <text x="418" y="275">T11</text>
+                                    <text x="453" y="275">T12</text>
                                 </g>
                             </svg>
                         </div>
                         <div class="bg-gray-900/90 p-3 rounded-xl border border-gray-800 text-xs text-gray-300 leading-relaxed space-y-1">
                             <p class="font-semibold text-teal-300 flex items-center gap-1.5">
-                                <i class="fa-solid fa-chart-line"></i> Độ biến động giá:
+                                <i class="fa-solid fa-chart-line"></i> Độ biến động giá (Boxplot):
                             </p>
-                            <p>• <b>T1–T7:</b> Hộp hẹp, rủi ro biến động giá thấp.</p>
-                            <p>• <b>T10:</b> Hộp dài nhất (28k–89k VNĐ), độ rung lắc cực đại.</p>
-                            <p>• Xuất hiện điểm ngoại lệ (outliers) trong các tháng sóng tăng.</p>
+                            <p>• <b>T1–T7:</b> Thân hộp hẹp dưới 10k, rủi ro biến động rất thấp.</p>
+                            <p>• <b>T10:</b> Hộp dài nhất (28k–89k VNĐ), râu cao vượt 89k VNĐ.</p>
+                            <p>• Các điểm tròn nhỏ đại diện cho phiên ngoại lệ (Outliers).</p>
                         </div>
                     </div>
 
                 </div>
-
-                <!-- 3. BIỂU ĐỒ PHÂN BỐ GIÁ QUÝ GIỮ NGUYÊN BẢN GỐC (GIỐNG HÌNH ẢNH MẪU BAN ĐẦU) -->
+                <!-- 3. BIỂU ĐỒ PHÂN BỐ GIÁ QUÝ GIỮ NGUYÊN BẢN GỐC -->
                 <div class="bg-black rounded-2xl p-5 shadow-md border border-gray-800 space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Q1 + Q2 GỐC -->
@@ -567,7 +649,73 @@ async def main_page():
                         <p>Trong 365 ngày giao dịch mô phỏng, có đến <b>363 ngày (chiếm 99.5%)</b> xuất hiện hiện tượng chạm giá trần hoặc chạm giá sàn trong phiên, chỉ có duy nhất <b>2 ngày (0.5%)</b> dao động biến động bình thường trong biên độ cho phép.</p>
                     </div>
                 </div>
+            </div>
+            <!-- PHẦN 4: HIỆN TƯỢNG KỸ THUẬT -->
+            <div id="section-4" class="space-y-6 pt-6 border-t border-gray-200">
+                <div class="flex items-center gap-3">
+                    <span class="p-2.5 bg-purple-100 text-purple-700 rounded-xl font-bold"><i class="fa-regular fa-lightbulb"></i></span>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">4. Hiện Tượng Kỹ Thuật</h2>
+                        <p class="text-xs text-gray-500">Phân tích chuyên sâu thuật toán mô phỏng và kỹ thuật vẽ đồ thị trong Python</p>
+                    </div>
+                </div>
 
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Khối Kỹ Thuật 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-3">
+                        <div class="flex items-center gap-2 text-purple-600 font-bold text-base">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Mô Phỏng Chuỗi Thời Gian Giá Cổ Phiếu</span>
+                        </div>
+                        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                            Mô hình ứng dụng chuỗi hành vi <b>Geometric Brownian Motion (GBM)</b> kết hợp biến ngẫu nhiên tuân theo phân bố chuẩn $N(\\mu, \\sigma^2)$ để sinh tỷ suất sinh lời hàng ngày, đồng thời kết hợp hàm lượng giác để tạo sóng xu hướng mùa vụ tích lũy và bùng nổ giá.
+                        </p>
+                    </div>
+
+                    <!-- Khối Kỹ Thuật 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-3">
+                        <div class="flex items-center gap-2 text-blue-600 font-bold text-base">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>Vẽ Đồ Thị Đa Sắc Liên Tục (`LineCollection`)</span>
+                        </div>
+                        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                            Để đường biểu diễn giá đổi màu liên tục theo quy tắc 5 màu bảng điện (Trần/Tăng/Tham chiếu/Giảm/Sàn) mà không bị đứt đoạn, chương trình áp dụng kỹ thuật tách mảng thành các đoạn ngắn và render bằng `matplotlib.collections.LineCollection`.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHẦN 5: KẾT LUẬN & MỞ RỘNG -->
+            <div id="section-5" class="space-y-6 pt-6 border-t border-gray-200 pb-10">
+                <div class="flex items-center gap-3">
+                    <span class="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl font-bold"><i class="fa-regular fa-newspaper"></i></span>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">5. Kết Luận & Mở Rộng</h2>
+                        <p class="text-xs text-gray-500">Đánh giá tổng quan dự án đồ án và hướng phát triển ứng dụng thực tế</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+                    <div class="space-y-2">
+                        <h3 class="font-bold text-gray-900 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-emerald-600"></i> Tổng Kết Đồ Án
+                        </h3>
+                        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                            Đồ án đã xây dựng thành công ứng dụng web trực quan hóa biến động giá cổ phiếu 365 ngày bằng Python (FastAPI & Matplotlib) triển khai lên môi trường Render. Ứng dụng đáp ứng đầy đủ yêu cầu mô phỏng nến Min-Max, biểu đồ chuỗi thời gian phân màu chuẩn chứng khoán, phân tích các chỉ số thống kê (Mean, Boxplot, Histogram) và lọc các ngày giao dịch có biến động bất thường.
+                        </p>
+                    </div>
+
+                    <div class="space-y-2 pt-2 border-t border-gray-100">
+                        <h3 class="font-bold text-gray-900 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-rocket text-blue-600"></i> Hướng Phát Triển Mở Rộng
+                        </h3>
+                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5 list-disc pl-5">
+                            <li>Kết nối API dữ liệu chứng khoán thực tế theo thời gian thực (Real-time stock data).</li>
+                            <li>Tích hợp thêm các chỉ báo kỹ thuật nâng cao như Moving Average (MA), RSI, Bollinger Bands.</li>
+                            <li>Ứng dụng mô hình học máy (LSTM/RNN) để dự báo xu hướng giá cổ phiếu tương lai.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
         </div>
