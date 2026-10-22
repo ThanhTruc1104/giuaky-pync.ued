@@ -55,7 +55,7 @@ async def main_page():
             <!-- 4 THẺ THỐNG KÊ (STAT CARDS) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <!-- Thẻ 1 -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div class="flex justify-between items-start">
                         <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">Biên độ Max–Min cả năm</span>
                         <span class="p-2 bg-green-50 rounded-lg text-green-600"><i class="fa-solid fa-arrow-trend-up"></i></span>
@@ -69,7 +69,7 @@ async def main_page():
                 </div>
 
                 <!-- Thẻ 2 -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div class="flex justify-between items-start">
                         <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">Phiên đột biến mạnh nhất</span>
                         <span class="p-2 bg-red-50 rounded-lg text-red-500"><i class="fa-solid fa-bolt"></i></span>
@@ -81,7 +81,7 @@ async def main_page():
                 </div>
 
                 <!-- Thẻ 3 -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div class="flex justify-between items-start">
                         <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">Tỷ lệ phiên bất thường</span>
                         <span class="p-2 bg-amber-50 rounded-lg text-amber-500"><i class="fa-solid fa-triangle-exclamation"></i></span>
@@ -93,7 +93,7 @@ async def main_page():
                 </div>
 
                 <!-- Thẻ 4 -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div class="flex justify-between items-start">
                         <span class="text-xs font-bold text-gray-400 tracking-wider uppercase">Đỉnh giá toàn năm</span>
                         <span class="p-2 bg-blue-50 rounded-lg text-blue-600"><i class="fa-solid fa-crown"></i></span>
@@ -104,34 +104,35 @@ async def main_page():
                     </div>
                 </div>
             </div>
-            <!-- THANH MENU ĐIỀU HƯỚNG 5 MỤC -->
+
+            <!-- THANH MENU ĐIỀU HƯỚNG BẤM ĐƯỢC VÀ CÓ HIỆU ỨNG HOVER -->
             <div class="flex flex-wrap gap-3 py-2 overflow-x-auto">
                 <!-- Mục 1: Đang chọn (Active) -->
-                <button class="flex items-center gap-2 bg-slate-200 text-gray-800 font-semibold px-4 py-2.5 rounded-xl text-sm border border-gray-300 shadow-sm transition">
-                    <i class="fa-solid fa-play text-gray-700 text-xs"></i>
+                <button class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border border-gray-400 shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-play text-gray-800 text-xs"></i>
                     <span>1. Mô Phỏng & Quy Tắc</span>
                 </button>
 
                 <!-- Mục 2 -->
-                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
+                <button class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-solid fa-chart-column text-gray-400 text-xs"></i>
                     <span>2. Diễn Biến Tháng/Quý</span>
                 </button>
 
                 <!-- Mục 3 -->
-                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
-                    <i class="fa-solid fa-[#]"></i> <i class="fa-solid fa-bars-staggered text-gray-400 text-xs"></i>
+                <button class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-bars-staggered text-gray-400 text-xs"></i>
                     <span>3. Bất Thường & Phân Bố</span>
                 </button>
 
                 <!-- Mục 4 -->
-                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
+                <button class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-regular fa-lightbulb text-gray-400 text-xs"></i>
                     <span>4. Hiện Tượng Kỹ Thuật</span>
                 </button>
 
                 <!-- Mục 5 -->
-                <button class="flex items-center gap-2 bg-white/60 hover:bg-white text-gray-600 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 transition">
+                <button class="cursor-pointer flex items-center gap-2 bg-white text-gray-700 font-medium px-4 py-2.5 rounded-xl text-sm border border-gray-200 shadow-sm hover:bg-slate-100 hover:text-gray-900 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-regular fa-newspaper text-gray-400 text-xs"></i>
                     <span>5. Kết Luận & Mở Rộng</span>
                 </button>
@@ -146,7 +147,8 @@ async def main_page():
                     </video>
                 </div>
             </div>
-            <!-- KHỐI QUY TẮC 5 MÀU CHỨNG KHOÁN (SAU VIDEO) -->
+
+            <!-- KHỐI QUY TẮC 5 MÀU CHỨNG KHOÁN -->
             <div class="bg-white/80 backdrop-blur rounded-2xl p-6 shadow-sm border border-gray-100 space-y-4">
                 <div class="space-y-1">
                     <h2 class="text-lg font-bold text-gray-900 flex items-center gap-2">
@@ -159,7 +161,7 @@ async def main_page():
 
                 <div class="space-y-2">
                     <!-- Giá Trần -->
-                    <div class="flex justify-between items-center bg-purple-50/60 p-3.5 rounded-xl border border-purple-100/50">
+                    <div class="flex justify-between items-center bg-purple-50/60 p-3.5 rounded-xl border border-purple-100/50 hover:bg-purple-100/80 transition-colors">
                         <div class="flex items-center gap-3">
                             <span class="w-3.5 h-3.5 rounded-full bg-purple-600 inline-block shadow-sm"></span>
                             <span class="font-semibold text-sm text-gray-800">Giá Trần (Ceiling)</span>
@@ -168,7 +170,7 @@ async def main_page():
                     </div>
 
                     <!-- Tăng Giá -->
-                    <div class="flex justify-between items-center bg-emerald-50/60 p-3.5 rounded-xl border border-emerald-100/50">
+                    <div class="flex justify-between items-center bg-emerald-50/60 p-3.5 rounded-xl border border-emerald-100/50 hover:bg-emerald-100/80 transition-colors">
                         <div class="flex items-center gap-3">
                             <span class="w-3.5 h-3.5 rounded-full bg-emerald-500 inline-block shadow-sm"></span>
                             <span class="font-semibold text-sm text-gray-800">Tăng Giá (Increase)</span>
@@ -177,7 +179,7 @@ async def main_page():
                     </div>
 
                     <!-- Tham Chiếu -->
-                    <div class="flex justify-between items-center bg-amber-50/60 p-3.5 rounded-xl border border-amber-100/50">
+                    <div class="flex justify-between items-center bg-amber-50/60 p-3.5 rounded-xl border border-amber-100/50 hover:bg-amber-100/80 transition-colors">
                         <div class="flex items-center gap-3">
                             <span class="w-3.5 h-3.5 rounded-full bg-amber-500 inline-block shadow-sm"></span>
                             <span class="font-semibold text-sm text-gray-800">Tham Chiếu (Reference)</span>
@@ -186,7 +188,7 @@ async def main_page():
                     </div>
 
                     <!-- Giảm Giá -->
-                    <div class="flex justify-between items-center bg-rose-50/60 p-3.5 rounded-xl border border-rose-100/50">
+                    <div class="flex justify-between items-center bg-rose-50/60 p-3.5 rounded-xl border border-rose-100/50 hover:bg-rose-100/80 transition-colors">
                         <div class="flex items-center gap-3">
                             <span class="w-3.5 h-3.5 rounded-full bg-rose-500 inline-block shadow-sm"></span>
                             <span class="font-semibold text-sm text-gray-800">Giảm Giá (Decrease)</span>
@@ -195,7 +197,7 @@ async def main_page():
                     </div>
 
                     <!-- Giá Sàn -->
-                    <div class="flex justify-between items-center bg-cyan-50/60 p-3.5 rounded-xl border border-cyan-100/50">
+                    <div class="flex justify-between items-center bg-cyan-50/60 p-3.5 rounded-xl border border-cyan-100/50 hover:bg-cyan-100/80 transition-colors">
                         <div class="flex items-center gap-3">
                             <span class="w-3.5 h-3.5 rounded-full bg-cyan-500 inline-block shadow-sm"></span>
                             <span class="font-semibold text-sm text-gray-800">Giá Sàn (Floor)</span>
@@ -216,5 +218,3 @@ async def main_page():
     </html>
     """
     return html_content
-            
-           
