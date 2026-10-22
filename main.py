@@ -591,16 +591,16 @@ async def main_page():
                         <div class="bg-emerald-50/50 rounded-xl p-5 border border-emerald-100 space-y-3">
                             <div class="flex items-center gap-2 text-emerald-800 font-bold text-sm md:text-base">
                                 <span class="flex items-center justify-center w-6 h-6 bg-emerald-600 text-white rounded-full text-xs">1</span>
-                                <span>So sánh với giá tham chiếu ($P_{ref}$)</span>
+                                <span>So sánh với giá tham chiếu</span>
                             </div>
                             <ul class="text-xs md:text-sm text-gray-700 space-y-2 leading-relaxed pl-2">
                                 <li class="flex items-start gap-1.5">
                                     <i class="fa-solid fa-angle-right text-emerald-600 mt-1"></i>
-                                    <span><b>Màu xanh lá:</b> Được quy định cho mức giá cao hơn giá tham chiếu ($P > P_{ref}$).</span>
+                                    <span><b>Màu xanh lá:</b> Được quy định cho mức giá cao hơn giá tham chiếu.</span>
                                 </li>
                                 <li class="flex items-start gap-1.5">
                                     <i class="fa-solid fa-angle-right text-emerald-600 mt-1"></i>
-                                    <span><b>Giá tham chiếu ($P_{ref}$):</b> Chính là giá đóng cửa của ngày giao dịch trước đó ($P_{close}(t - 1)$).</span>
+                                    <span><b>Giá tham chiếu:</b> Chính là giá đóng cửa của ngày giao dịch trước đó.</span>
                                 </li>
                             </ul>
                         </div>
@@ -611,7 +611,7 @@ async def main_page():
                                 <span>Hiện tượng "Đường đi xuống nhưng vẫn có màu xanh"</span>
                             </div>
                             <p class="text-xs md:text-sm text-gray-700 leading-relaxed">
-                                Hiện tượng này xảy ra khi giá đang trong một **xu hướng điều chỉnh/giảm ngắn hạn** (đi xuống từ đỉnh của phiên hoặc của ngày hôm đó), nhưng **mặt bằng giá hiện tại vẫn cao hơn mức giá tham chiếu** của ngày ($P > P_{ref}$).
+                                Hiện tượng này xảy ra khi giá đang trong một xu hướng điều chỉnh/giảm ngắn hạn (đi xuống từ đỉnh của phiên hoặc của ngày hôm đó), nhưng mặt bằng giá hiện tại vẫn cao hơn mức giá tham chiếu của ngày.
                             </p>
                         </div>
                     </div>
@@ -621,7 +621,7 @@ async def main_page():
                             <i class="fa-solid fa-code"></i> Tóm tắt xử lý đồ họa trong Python (Matplotlib):
                         </div>
                         <p class="text-gray-300 leading-relaxed">
-                            Màu sắc của mỗi phân đoạn đường không phụ thuộc vào độ dốc âm/dương (đi lên hay đi xuống) của đoạn đó, mà phụ thuộc hoàn toàn vào giá trị $P(t)$ so với $P_{ref}$. Do đó, dù đường biểu diễn đi xuống nhưng thuộc vùng $P(t) > P_{ref}$, mảng màu tô bằng `LineCollection` vẫn được gán mã xanh chuẩn chứng khoán (`#00E676`).
+                            Màu sắc của mỗi phân đoạn đường không phụ thuộc vào độ dốc âm/dương (đi lên hay đi xuống) của đoạn đó, mà phụ thuộc hoàn toàn vào giá trị tại thời điểm giao dịch so với giá tham chiếu. Do đó, dù đường biểu diễn đi xuống nhưng thuộc vùng giá lớn hơn giá tham chiếu, mảng màu tô bằng LineCollection vẫn được gán màu xanh chuẩn chứng khoán.
                         </p>
                     </div>
                 </div>
