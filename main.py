@@ -28,7 +28,7 @@ async def main_page():
                         <i class="fa-solid fa-chart-line text-blue-600"></i>
                         <span>Đồ Án Lập Trình Python Nâng Cao</span>
                         <span>•</span>
-                        <span>Năm Học 2025 – 2026</span>
+                        <span>Năm Học 2026 – 2027</span>
                     </div>
                     <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
                         MÔ PHỎNG BIẾN ĐỘNG GIÁ CỔ PHIẾU TRONG 365 NGÀY
@@ -586,7 +586,7 @@ async def main_page():
                             <span>Mô Phỏng Chuỗi Thời Gian Giá Cổ Phiếu</span>
                         </div>
                         <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
-                            Mô hình ứng dụng chuỗi hành vi <b>Geometric Brownian Motion (GBM)</b> kết hợp biến ngẫu nhiên tuân theo phân bố chuẩn $N(\\mu, \\sigma^2)$ để sinh tỷ suất sinh lời hàng ngày, đồng thời kết hợp hàm lượng giác để tạo sóng xu hướng mùa vụ tích lũy và bùng nổ giá.
+                            Mô hình ứng dụng chuỗi hành vi <b>Geometric Brownian Motion (GBM)</b> kết hợp biến ngẫu nhiên tuân theo phân bố chuẩn N(\\mu, \\sigma^2) để sinh tỷ suất sinh lời hàng ngày, đồng thời kết hợp hàm lượng giác để tạo sóng xu hướng mùa vụ tích lũy và bùng nổ giá.
                         </p>
                     </div>
 
@@ -632,6 +632,21 @@ async def main_page():
                             <li>Ứng dụng mô hình học máy (LSTM/RNN) để dự báo xu hướng giá cổ phiếu tương lai.</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            <!-- KHỐI CẢM ƠN (LỜI TRI ÂN LỊCH SỰ VÀ TRANG TRỌNG) -->
+            <div class="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 text-white rounded-2xl p-8 shadow-lg border border-gray-800 text-center space-y-3 my-8">
+                <div class="inline-flex items-center justify-center w-12 h-12 bg-amber-500/20 text-amber-400 rounded-full mb-1">
+                    <i class="fa-solid fa-heart text-xl"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-extrabold text-amber-400 tracking-wide">
+                    LỜI CẢM ƠN
+                </h3>
+                <p class="text-xs md:text-sm text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    Em xin chân thành cảm ơn thầy <b>Phan Trần Đức Minh</b> cùng toàn thể Quý Thầy/Cô Khoa Toán - Tin, Trường Đại học Sư phạm – Đại học Đà Nẵng đã tận tình hướng dẫn, hỗ trợ kiến thức chuyên môn và tạo điều kiện giúp em hoàn thành đồ án này!
+                </p>
+                <div class="pt-3 text-xs text-gray-400 font-medium">
+                    © 2026 Nguyễn Thị Thanh Trúc — Lớp 25CKDL • Khoa Toán - Tin
                 </div>
             </div>
 
