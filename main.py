@@ -154,7 +154,7 @@ async def main_page():
                         <div class="flex justify-between items-center bg-purple-50/60 p-3.5 rounded-xl border border-purple-100/50 hover:bg-purple-100/80 transition-colors">
                             <div class="flex items-center gap-3">
                                 <span class="w-3.5 h-3.5 rounded-full bg-purple-600 inline-block shadow-sm"></span>
-                                <span class="font-semibold text-sm text-gray-800">Giá Trần (Ceiling)</span>
+                                <span class="font-semibold text-sm text-gray-800">Giá Trần</span>
                             </div>
                             <span class="text-xs font-semibold text-purple-700">+10% so với Tham chiếu</span>
                         </div>
@@ -162,7 +162,7 @@ async def main_page():
                         <div class="flex justify-between items-center bg-emerald-50/60 p-3.5 rounded-xl border border-emerald-100/50 hover:bg-emerald-100/80 transition-colors">
                             <div class="flex items-center gap-3">
                                 <span class="w-3.5 h-3.5 rounded-full bg-emerald-500 inline-block shadow-sm"></span>
-                                <span class="font-semibold text-sm text-gray-800">Tăng Giá (Increase)</span>
+                                <span class="font-semibold text-sm text-gray-800">Tăng Giá</span>
                             </div>
                             <span class="text-xs font-semibold text-emerald-700">Giá đóng > Tham chiếu</span>
                         </div>
@@ -170,15 +170,15 @@ async def main_page():
                         <div class="flex justify-between items-center bg-amber-50/60 p-3.5 rounded-xl border border-amber-100/50 hover:bg-amber-100/80 transition-colors">
                             <div class="flex items-center gap-3">
                                 <span class="w-3.5 h-3.5 rounded-full bg-amber-500 inline-block shadow-sm"></span>
-                                <span class="font-semibold text-sm text-gray-800">Tham Chiếu (Reference)</span>
+                                <span class="font-semibold text-sm text-gray-800">Tham Chiếu</span>
                             </div>
-                            <span class="text-xs font-semibold text-amber-700">Giá đóng ngày trước ($P_{ref}$)</span>
+                            <span class="text-xs font-semibold text-amber-700">Giá đóng ngày trước</span>
                         </div>
 
                         <div class="flex justify-between items-center bg-rose-50/60 p-3.5 rounded-xl border border-rose-100/50 hover:bg-rose-100/80 transition-colors">
                             <div class="flex items-center gap-3">
                                 <span class="w-3.5 h-3.5 rounded-full bg-rose-500 inline-block shadow-sm"></span>
-                                <span class="font-semibold text-sm text-gray-800">Giảm Giá (Decrease)</span>
+                                <span class="font-semibold text-sm text-gray-800">Giảm Giá</span>
                             </div>
                             <span class="text-xs font-semibold text-rose-700">Giá đóng < Tham chiếu</span>
                         </div>
@@ -186,7 +186,7 @@ async def main_page():
                         <div class="flex justify-between items-center bg-cyan-50/60 p-3.5 rounded-xl border border-cyan-100/50 hover:bg-cyan-100/80 transition-colors">
                             <div class="flex items-center gap-3">
                                 <span class="w-3.5 h-3.5 rounded-full bg-cyan-500 inline-block shadow-sm"></span>
-                                <span class="font-semibold text-sm text-gray-800">Giá Sàn (Floor)</span>
+                                <span class="font-semibold text-sm text-gray-800">Giá Sàn</span>
                             </div>
                             <span class="text-xs font-semibold text-cyan-700">-10% so với Tham chiếu</span>
                         </div>
@@ -520,7 +520,7 @@ async def main_page():
                         <p class="font-semibold text-emerald-400 flex items-center gap-1.5">
                             <i class="fa-solid fa-triangle-exclamation"></i> Giải thích yếu tố bất thường:
                         </p>
-                        <p>Một ngày được gắn nhãn <b>bất thường</b> khi giá cực đại trong ngày (`Giá max`) chạm biên `Giá trần` (+10%) hoặc giá cực tiểu trong ngày (`Giá min`) chạm biên `Giá sàn` (-10%) so với giá tham chiếu ngày trước đó.</p>
+                        <p>Một ngày được gắn nhãn <b>bất thường</b> khi giá cực đại trong ngày (giá max) chạm biên giá trần (+10%) hoặc giá cực tiểu trong ngày (giá min) chạm biên giá sàn (-10%) so với giá tham chiếu ngày trước đó.</p>
                     </div>
                 </div>
 
