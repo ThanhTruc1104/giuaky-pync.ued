@@ -102,10 +102,42 @@ async def main_page():
             </div>
 
             <!-- THANH MENU ĐIỀU HƯỚNG TỰ ĐỘNG CUỘN (ĐÃ ĐỒNG BỘ NỀN XÁM + VIỀN ĐEN DÀNH CHO CẢ 5 NÚT) -->
+            <!-- THANH MENU ĐIỀU HƯỚNG TỰ ĐỘNG CUỘN (ĐÃ ĐỒNG BỘ MÀU SẮC THEO TỪNG BIỂU TƯỢNG) -->
+            <div class="flex flex-wrap gap-3 py-2 overflow-x-auto sticky top-4 z-50 bg-gray-100/90 backdrop-blur p-2 rounded-2xl shadow-sm">
+                <!-- Nút 1: Chủ đề màu đỏ -->
+                <a href="#section-1" class="cursor-pointer flex items-center gap-2 bg-red-50 text-red-800 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-red-300 shadow-sm hover:bg-red-100 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-play text-red-600 text-xs"></i>
+                    <span>1. Mô Phỏng & Quy Tắc</span>
+                </a>
+
+                <!-- Nút 2: Chủ đề màu xanh dương -->
+                <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-blue-50 text-blue-800 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-blue-300 shadow-sm hover:bg-blue-100 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-chart-column text-blue-600 text-xs"></i>
+                    <span>2. Diễn Biến Tháng/Quý</span>
+                </a>
+
+                <!-- Nút 3: Chủ đề màu vàng cam (Amber) -->
+                <a href="#section-3" class="cursor-pointer flex items-center gap-2 bg-amber-50 text-amber-800 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-amber-300 shadow-sm hover:bg-amber-100 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-solid fa-bars-staggered text-amber-600 text-xs"></i>
+                    <span>3. Bất Thường & Phân Bố</span>
+                </a>
+
+                <!-- Nút 4: Chủ đề màu tím -->
+                <a href="#section-4" class="cursor-pointer flex items-center gap-2 bg-purple-50 text-purple-800 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-purple-300 shadow-sm hover:bg-purple-100 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-regular fa-lightbulb text-purple-600 text-xs"></i>
+                    <span>4. Hiện Tượng Kỹ Thuật</span>
+                </a>
+
+                <!-- Nút 5: Chủ đề màu xanh ngọc/lục (Emerald) -->
+                <a href="#section-5" class="cursor-pointer flex items-center gap-2 bg-emerald-50 text-emerald-800 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-emerald-300 shadow-sm hover:bg-emerald-100 hover:shadow-md hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
+                    <i class="fa-regular fa-newspaper text-emerald-600 text-xs"></i>
+                    <span>5. Kết Luận & Mở Rộng</span>
+                </a>
+            </div>
             <div class="flex flex-wrap gap-3 py-2 overflow-x-auto sticky top-4 z-50 bg-gray-100/90 backdrop-blur p-2 rounded-2xl">
                 <a href="#section-1" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-solid fa-play text-gray-800 text-xs"></i>
-                    <span>1. MÔ PHỎNG & QUY TẮCc</span>
+                    <span>1. MÔ PHỎNG & QUY TẮC</span>
                 </a>
 
                 <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
