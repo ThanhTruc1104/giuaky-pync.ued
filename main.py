@@ -167,7 +167,7 @@ async def main_page():
                             <h3 class="font-bold text-gray-900 flex items-center gap-1.5">
                                 <i class="fa-solid fa-video text-emerald-600"></i> Trình ghi hình và mã hóa video
                             </h3>
-                            <p>• Thiết lập tốc độ khung hình `fps = 6`, giúp tệp video MP4 đầu ra đạt thời lượng chính xác khoảng 60.8 giây (365 chia cho 6).</p>
+                            <p>• Thiết lập tốc độ khung hình fps = 6, giúp tệp video MP4 đầu ra đạt thời lượng chính xác khoảng 60.8 giây (365 chia cho 6).</p>
                             <p>• Sử dụng "FFMpegWriter" với băng thông (bitrate = 8000) kết hợp tham số nén cao cấp của chuẩn H.264 (-crf 18) nhằm đảm bảo chất lượng hình ảnh sắc nét gần như nguyên bản (gần như không mất dữ liệu) ở độ phân giải 300 DPI.</p>
                         </div>
                     </div>
