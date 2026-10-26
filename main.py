@@ -46,7 +46,10 @@ async def main_page():
                         <div class="font-bold text-gray-900 text-base">Nguyễn Thị Thanh Trúc</div>
                         <div class="text-xs text-gray-500">Lớp 25CKDL • Khoa: Toán - Tin</div>
                     </div>
-                    <img src="/static/avatar.jpg" alt="avatar" class="w-10 h-10 rounded-full object-cover border border-gray-200 shadow-sm" />
+                    <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-sm shadow-inner">
+                        TT
+                    </div>
+                    
                 </div>
             </div>
 
