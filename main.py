@@ -14,7 +14,7 @@ async def main_page():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Báo Cáo Phân Tích & Mô Phỏng Biến Động Giá Cổ Phiếu 365 Ngày</title>
+        <title>Báo cáo phân tích & Mô phỏng biến động giá cổ phiếu 365 ngày</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
@@ -26,17 +26,17 @@ async def main_page():
                 <div>
                     <div class="flex items-center gap-2 text-sm text-gray-500 font-medium mb-1">
                         <i class="fa-solid fa-chart-line text-blue-600"></i>
-                        <span>Đồ Án Lập Trình Python Nâng Cao</span>
+                        <span>Đồ án "Lập trình Python nâng cao"</span>
                         <span>•</span>
-                        <span>Năm Học 2026 – 2027</span>
+                        <span>Năm học 2026 – 2027</span>
                     </div>
                     <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">
                         MÔ PHỎNG BIẾN ĐỘNG GIÁ CỔ PHIẾU TRONG 365 NGÀY
                     </h1>
                     <div class="flex flex-wrap items-center gap-4 text-xs md:text-sm text-gray-600 mt-3">
                         <span class="flex items-center gap-1.5"><i class="fa-solid fa-user-tie text-gray-400"></i> GVHD: <b>Phan Trần Đức Minh</b></span>
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-gray-400"></i> Ngành: <b>Khoa học Dữ liệu</b></span>
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-building-columns text-gray-400"></i> <b>Trường ĐH Sư phạm - ĐH Đà Nẵng</b></span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-gray-400"></i> Ngành: <b>Khoa học dữ liệu</b></span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-building-columns text-gray-400"></i> <b>Trường Đại học Sư phạm - Đại học Đà Nẵng</b></span>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ async def main_page():
                     <div class="text-right">
                         <div class="text-xs text-gray-400 font-medium">Sinh viên thực hiện</div>
                         <div class="font-bold text-gray-900 text-base">Nguyễn Thị Thanh Trúc</div>
-                        <div class="text-xs text-gray-500">Lớp 25CKDL • Khoa Toán - Tin</div>
+                        <div class="text-xs text-gray-500">Lớp 25CKDL • Khoa: Toán - Tin</div>
                     </div>
                     <div class="w-10 h-10 rounded-full bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-sm shadow-inner">
                         TT
@@ -105,32 +105,59 @@ async def main_page():
             <div class="flex flex-wrap gap-3 py-2 overflow-x-auto sticky top-4 z-50 bg-gray-100/90 backdrop-blur p-2 rounded-2xl">
                 <a href="#section-1" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-solid fa-play text-gray-800 text-xs"></i>
-                    <span>1. Mô Phỏng & Quy Tắc</span>
+                    <span>1. MÔ PHỎNG & QUY TẮCc</span>
                 </a>
 
                 <a href="#section-2" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-solid fa-chart-column text-gray-800 text-xs"></i>
-                    <span>2. Diễn Biến Tháng/Quý</span>
+                    <span>2. DIỄN BIẾN THÁNG/QUÝ</span>
                 </a>
 
                 <a href="#section-3" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-solid fa-bars-staggered text-gray-800 text-xs"></i>
-                    <span>3. Bất Thường & Phân Bố</span>
+                    <span>3. BẤT THƯỜNG VÀ PHÂN BỐ</span>
                 </a>
 
                 <a href="#section-4" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-regular fa-lightbulb text-gray-800 text-xs"></i>
-                    <span>4. Hiện Tượng Kỹ Thuật</span>
+                    <span>4. HIỆN TƯỢNG ĐỒ THỊ</span>
                 </a>
 
                 <a href="#section-5" class="cursor-pointer flex items-center gap-2 bg-slate-300 text-gray-900 font-bold px-4 py-2.5 rounded-xl text-sm border-2 border-black shadow-md hover:bg-slate-400 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-200">
                     <i class="fa-regular fa-newspaper text-gray-800 text-xs"></i>
-                    <span>5. Kết Luận & Mở Rộng</span>
+                    <span>5. KẾT LUẬN & MỞ RỘNG</span>
                 </a>
             </div>
 
             <!-- PHẦN 1: MÔ PHỎNG & QUY TẮC -->
             <div id="section-1" class="space-y-6 pt-2">
+            <!-- KHỐI GIẢI THÍCH LẬP TRÌNH TRƯỚC KHI CHẠY VIDEO -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 space-y-4">
+                    <div class="border-b border-gray-100 pb-3">
+                        <h2 class="text-lg font-extrabold text-gray-900 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-blue-600"></i>
+                            Giải thích kỹ thuật lập trình hoạt ảnh và xuất video mô phỏng
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm text-gray-700 leading-relaxed">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                            <h3 class="font-bold text-gray-900 flex items-center gap-1.5">
+                                <i class="fa-solid fa-list-check text-blue-600"></i> Xác định chuỗi & Cấu hình khung hình
+                            </h3>
+                            <p>• Định nghĩa tập hợp các khung hình cần thực thi (`frames_to_run`) bao gồm toàn bộ 365 ngày giao dịch trong năm (từ mốc 0 đến 364, ứng với mỗi khung hình đại diện cho 1 ngày giao dịch).</p>
+                            <p>• Sử dụng lớp `animation.FuncAnimation` để liên kết đối tượng khung hình (`fig`) với hàm cập nhật dữ liệu (`update`). Thiết lập khoảng thời gian `interval = 165` ms để đồ thị hiển thị trực tiếp (preview) với thời lượng hoàn chỉnh xấp xỉ 60 giây.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
+                            <h3 class="font-bold text-gray-900 flex items-center gap-1.5">
+                                <i class="fa-solid fa-video text-emerald-600"></i> Trình ghi hình và mã hóa video
+                            </h3>
+                            <p>• Thiết lập tốc độ khung hình `fps = 6`, giúp tệp video MP4 đầu ra đạt thời lượng chính xác khoảng 60.8 giây (365 chia cho 6).</p>
+                            <p>• Sử dụng `FFMpegWriter` với băng thông `bitrate = 8000` kết hợp tham số nén cao cấp của chuẩn H.264 (`-crf 18`) nhằm đảm bảo chất lượng hình ảnh sắc nét gần như nguyên bản (gần như không mất dữ liệu - near lossless) ở độ phân giải 300 DPI.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
                     <div class="relative overflow-hidden rounded-xl bg-black aspect-video">
                         <video controls autoplay loop muted class="w-full h-full object-contain">
@@ -143,7 +170,7 @@ async def main_page():
                 <div class="bg-white/80 backdrop-blur rounded-2xl p-6 shadow-sm border border-gray-100 space-y-4">
                     <div class="space-y-1">
                         <h2 class="text-lg font-bold text-gray-900 flex items-center gap-2">
-                            <span class="text-amber-500">🎨</span> Quy Tắc 5 Màu Chứng Khoán
+                            <span class="text-amber-500">🎨</span> Quy tắc 5 màu chứng khoán
                         </h2>
                         <p class="text-xs text-gray-500">
                             Chuẩn màu bảng điện giao dịch chứng khoán áp dụng trong mô phỏng Python:
@@ -204,7 +231,7 @@ async def main_page():
                 <div class="flex items-center gap-3">
                     <span class="p-2.5 bg-blue-100 text-blue-700 rounded-xl font-bold"><i class="fa-solid fa-chart-column"></i></span>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900">2. Diễn Biến Tháng / Quý</h2>
+                        <h2 class="text-xl font-bold text-gray-900">2. Diễn biến tháng/quý</h2>
                         <p class="text-xs text-gray-500">Phân tích xu hướng trung bình, độ biến động và phân bố giá theo thời gian</p>
                     </div>
                 </div>
@@ -213,7 +240,7 @@ async def main_page():
                     <!-- Biểu đồ 1 -->
                     <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 flex flex-col justify-between space-y-3">
                         <h3 class="text-center font-bold text-white text-sm md:text-base">
-                            Giá Trung Bình Mã Cổ Phiếu Theo Tháng
+                            Giá trung bình mã cổ phiếu theo tháng
                         </h3>
                         <div class="w-full flex justify-center">
                             <svg viewBox="0 0 500 300" class="w-full h-auto text-sky-400 font-sans">
@@ -274,7 +301,7 @@ async def main_page():
                     <!-- Biểu đồ 2: BOXPLOT CHUẨN MẪU GỐC -->
                     <div class="bg-black rounded-2xl p-4 shadow-md border border-gray-800 flex flex-col justify-between space-y-3">
                         <h3 class="text-center font-bold text-white text-sm md:text-base">
-                            Biến Động Giá Mỗi Tháng
+                            Biến động giá mỗi tháng
                         </h3>
                         <div class="w-full flex justify-center">
                             <svg viewBox="0 0 500 300" class="w-full h-auto font-sans">
@@ -367,7 +394,7 @@ async def main_page():
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
                             <h4 class="text-center font-bold text-white text-sm md:text-base">
-                                Phân Bố Giá 2 Quý Đầu Năm (Q1 + Q2)
+                                Phân bố giá 2 quý đầu năm (Q1 + Q2) 
                             </h4>
                             <div class="w-full flex justify-center">
                                 <svg viewBox="0 0 500 300" class="w-full h-auto">
@@ -413,7 +440,7 @@ async def main_page():
 
                         <div class="space-y-2">
                             <h4 class="text-center font-bold text-white text-sm md:text-base">
-                                Phân Bố Giá 2 Quý Cuối Năm (Q3 + Q4)
+                                Phân bố giá 2 quý cuối  (Q3 + Q4)
                             </h4>
                             <div class="w-full flex justify-center">
                                 <svg viewBox="0 0 500 300" class="w-full h-auto">
@@ -569,12 +596,12 @@ async def main_page():
 
             </div>
 
-            <!-- PHẦN 4: HIỆN TƯỢNG KỸ THUẬT -->
+            <!-- PHẦN 4: HIỆN TƯỢNG ĐỒ THỊ -->
             <div id="section-4" class="space-y-6 pt-6 border-t border-gray-200">
                 <div class="flex items-center gap-3">
                     <span class="p-2.5 bg-purple-100 text-purple-700 rounded-xl font-bold"><i class="fa-regular fa-lightbulb"></i></span>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900">4. Hiện Tượng Kỹ Thuật</h2>
+                        <h2 class="text-xl font-bold text-gray-900">4. Hiện tượng đồ thị </h2>
                         <p class="text-xs text-gray-500">Phân tích chuyên sâu quy tắc phối màu bảng điện và thuật toán đồ thị</p>
                     </div>
                 </div>
