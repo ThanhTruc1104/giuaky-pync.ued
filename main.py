@@ -133,7 +133,7 @@ async def main_page():
             <div id="section-1" class="space-y-6 pt-2">
                 <!-- Tiêu đề mục 1 đồng bộ phong cách với các mục khác -->
                 <div class="flex items-center gap-3">
-                    <span class="p-2.5 bg-indigo-100 text-indigo-700 rounded-xl font-bold"><i class="fa-solid fa-play"></i></span>
+                    <span class="p-2.5 bg-red-100 text-red-700 rounded-xl font-bold"><i class="fa-solid fa-play"></i></span>
                     <div>
                         <h2 class="text-xl font-bold text-gray-900">1. MÔ PHỎNG & QUY TẮC</h2>
                         <p class="text-xs text-gray-500">Mô phỏng trực quan hóa chuỗi thời gian và quy tắc phối màu chuẩn chứng khoán</p>
@@ -153,8 +153,8 @@ async def main_page():
                             <h3 class="font-bold text-gray-900 flex items-center gap-1.5">
                                 <i class="fa-solid fa-list-check text-blue-600"></i> Xác định chuỗi & Cấu hình khung hình
                             </h3>
-                            <p>• Định nghĩa tập hợp các khung hình cần thực thi (`frames_to_run`) bao gồm toàn bộ 365 ngày giao dịch trong năm (từ mốc 0 đến 364, ứng với mỗi khung hình đại diện cho 1 ngày giao dịch).</p>
-                            <p>• Sử dụng lớp `animation.FuncAnimation` để liên kết đối tượng khung hình (`fig`) với hàm cập nhật dữ liệu (`update`). Thiết lập khoảng thời gian `interval = 165` ms để đồ thị hiển thị trực tiếp (preview) với thời lượng hoàn chỉnh xấp xỉ 60 giây.</p>
+                            <p>• Định nghĩa tập hợp các khung hình cần thực thi (frames_to_run) bao gồm toàn bộ 365 ngày giao dịch trong năm (từ mốc 0 đến 364, ứng với mỗi khung hình đại diện cho 1 ngày giao dịch).</p>
+                            <p>• Sử dụng lớp "animation.FuncAnimation" để liên kết đối tượng khung hình (fig) với hàm cập nhật dữ liệu (update). Thiết lập khoảng thời gian (interval = 165 ms) để đồ thị hiển thị trực tiếp (preview) với thời lượng hoàn chỉnh xấp xỉ 60 giây.</p>
                         </div>
 
                         <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
@@ -162,7 +162,7 @@ async def main_page():
                                 <i class="fa-solid fa-video text-emerald-600"></i> Trình ghi hình và mã hóa video
                             </h3>
                             <p>• Thiết lập tốc độ khung hình `fps = 6`, giúp tệp video MP4 đầu ra đạt thời lượng chính xác khoảng 60.8 giây (365 chia cho 6).</p>
-                            <p>• Sử dụng `FFMpegWriter` với băng thông `bitrate = 8000` kết hợp tham số nén cao cấp của chuẩn H.264 (`-crf 18`) nhằm đảm bảo chất lượng hình ảnh sắc nét gần như nguyên bản (gần như không mất dữ liệu - near lossless) ở độ phân giải 300 DPI.</p>
+                            <p>• Sử dụng "FFMpegWriter" với băng thông (bitrate = 8000) kết hợp tham số nén cao cấp của chuẩn H.264 (-crf 18) nhằm đảm bảo chất lượng hình ảnh sắc nét gần như nguyên bản (gần như không mất dữ liệu) ở độ phân giải 300 DPI.</p>
                         </div>
                     </div>
                 </div>
@@ -661,13 +661,12 @@ async def main_page():
                     </div>
                 </div>
             </div>
-            
             <!-- PHẦN 5: KẾT LUẬN & MỞ RỘNG -->
             <div id="section-5" class="space-y-6 pt-6 border-t border-gray-200">
-                <div class=" items-center gap-3">
-                    <span class="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl font-bold"><i class="fa-regular fa-newspaper"></i></span>
+                <div class="flex items-center gap-3">
+                    <span class="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl font-bold"><i class="fa-solid fa-newspaper"></i></span>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900">5. KẾT LUẬN & MỞ RỘNG</h2>
+                        <h2 class="text-xl font-bold text-gray-900">5. Kết Luận & Mở Rộng</h2>
                         <p class="text-xs text-gray-500">Đánh giá tổng quan dự án đồ án và hướng phát triển ứng dụng thực tế</p>
                     </div>
                 </div>
@@ -694,6 +693,9 @@ async def main_page():
                     </div>
                 </div>
             </div>
+
+            
+            
             <!-- KHỐI CẢM ƠN (LỜI TRI ÂN LỊCH SỰ VÀ TRANG TRỌNG) -->
             <div class="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 text-white rounded-2xl p-8 shadow-lg border border-gray-800 text-center space-y-3 my-8">
                 <div class="inline-flex items-center justify-center w-12 h-12 bg-amber-500/20 text-amber-400 rounded-full mb-1">
