@@ -131,6 +131,14 @@ async def main_page():
 
             <!-- PHẦN 1: MÔ PHỎNG & QUY TẮC -->
             <div id="section-1" class="space-y-6 pt-2">
+                <!-- Tiêu đề mục 1 đồng bộ phong cách với các mục khác -->
+                <div class="flex items-center gap-3">
+                    <span class="p-2.5 bg-indigo-100 text-indigo-700 rounded-xl font-bold"><i class="fa-solid fa-play"></i></span>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900">1. MÔ PHỎNG & QUY TẮC</h2>
+                        <p class="text-xs text-gray-500">Mô phỏng trực quan hóa chuỗi thời gian và quy tắc phối màu chuẩn chứng khoán</p>
+                    </div>
+                </div>
             <!-- KHỐI GIẢI THÍCH LẬP TRÌNH TRƯỚC KHI CHẠY VIDEO -->
                 <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 space-y-4">
                     <div class="border-b border-gray-100 pb-3">
@@ -231,7 +239,7 @@ async def main_page():
                 <div class="flex items-center gap-3">
                     <span class="p-2.5 bg-blue-100 text-blue-700 rounded-xl font-bold"><i class="fa-solid fa-chart-column"></i></span>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900">2. Diễn biến tháng/quý</h2>
+                        <h2 class="text-xl font-bold text-gray-900">2. DIỄN BIẾN THÁNG/QUÝ</h2>
                         <p class="text-xs text-gray-500">Phân tích xu hướng trung bình, độ biến động và phân bố giá theo thời gian</p>
                     </div>
                 </div>
@@ -499,7 +507,7 @@ async def main_page():
                 <div class="flex items-center gap-3">
                     <span class="p-2.5 bg-amber-100 text-amber-700 rounded-xl font-bold"><i class="fa-solid fa-bars-staggered"></i></span>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900">3. Bất Thường & Phân Bố</h2>
+                        <h2 class="text-xl font-bold text-gray-900">3. BẤT THƯỜNG & PHÂN BỐ</h2>
                         <p class="text-xs text-gray-500">Thống kê chi tiết các phiên giá chạm trần/sàn và tổng quan mức độ bất thường</p>
                     </div>
                 </div>
@@ -601,7 +609,7 @@ async def main_page():
                 <div class="flex items-center gap-3">
                     <span class="p-2.5 bg-purple-100 text-purple-700 rounded-xl font-bold"><i class="fa-regular fa-lightbulb"></i></span>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900">4. Hiện tượng đồ thị </h2>
+                        <h2 class="text-xl font-bold text-gray-900">4. HIỆN TƯỢNG ĐỒ THỊ </h2>
                         <p class="text-xs text-gray-500">Phân tích chuyên sâu quy tắc phối màu bảng điện và thuật toán đồ thị</p>
                     </div>
                 </div>
@@ -659,7 +667,7 @@ async def main_page():
                 <div class=" items-center gap-3">
                     <span class="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl font-bold"><i class="fa-regular fa-newspaper"></i></span>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900">5. Kết Luận & Mở Rộng</h2>
+                        <h2 class="text-xl font-bold text-gray-900">5. KẾT LUẬN & MỞ RỘNG</h2>
                         <p class="text-xs text-gray-500">Đánh giá tổng quan dự án đồ án và hướng phát triển ứng dụng thực tế</p>
                     </div>
                 </div>
