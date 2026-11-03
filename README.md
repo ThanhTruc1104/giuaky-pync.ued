@@ -1,8 +1,8 @@
 📈 Mô Phỏng Biến Động Giá Của Một Mã Chứng Khoán
-> **Học phần:** Lập trình Python Nâng cao 
-> **Giảng viên hướng dẫn:** Phan Trần Đức Minh
-> **Học viên thực hiện:** Nguyễn Thị Thanh Trúc
-> **Mã sinh viên / Lớp:** 25CKDL - Khoa học dữ liệu (Khoa Toán - Tin)
+> **Học phần:** Lập trình Python Nâng cao[cite: 2]  
+> **Giảng viên hướng dẫn:** Phan Trần Đức Minh[cite: 2]  
+> **Học viên thực hiện:** Nguyễn Thị Thanh Trúc[cite: 3]  
+> **Mã sinh viên / Lớp:** 25CKDL - Khoa học dữ liệu (Khoa Toán - Tin)[cite: 3]  
 > **Trường:** Trường Đại học Sư phạm – Đại học Đà Nẵng (UED-UDN)
 
 🎯 Giới thiệu đề tài
