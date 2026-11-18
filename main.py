@@ -34,7 +34,7 @@ async def main_page():
                         MÔ PHỎNG BIẾN ĐỘNG GIÁ CỔ PHIẾU TRONG 365 NGÀY
                     </h1>
                     <div class="flex flex-wrap items-center gap-4 text-xs md:text-sm text-gray-600 mt-3">
-                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-user-tie text-gray-400"></i> GVHD: <b>Phan Trần Đức Minh</b></span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-user-tie text-gray-400"></i> GVHD: <b>TS.Phan Trần Đức Minh</b></span>
                         <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-gray-400"></i> Ngành: <b>Khoa học dữ liệu</b></span>
                         <span class="flex items-center gap-1.5"><i class="fa-solid fa-building-columns text-gray-400"></i> <b>Trường Đại học Sư phạm - Đại học Đà Nẵng</b></span>
                     </div>
