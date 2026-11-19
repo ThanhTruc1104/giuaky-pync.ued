@@ -687,16 +687,7 @@ async def main_page():
                         </p>
                     </div>
 
-                    <div class="space-y-2 pt-2 border-t border-gray-100">
-                        <h3 class="font-bold text-gray-900 text-base flex items-center gap-2">
-                            <i class="fa-solid fa-rocket text-blue-600"></i> Hướng Phát Triển Mở Rộng
-                        </h3>
-                        <ul class="text-xs md:text-sm text-gray-600 space-y-1.5 list-disc pl-5">
-                            <li>Kết nối API dữ liệu chứng khoán thực tế theo thời gian thực (Real-time stock data).</li>
-                            <li>Tích hợp thêm các chỉ báo kỹ thuật nâng cao như Moving Average (MA), RSI, Bollinger Bands.</li>
-                            <li>Ứng dụng mô hình học máy (LSTM/RNN) để dự báo xu hướng giá cổ phiếu tương lai.</li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
             
