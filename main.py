@@ -14,7 +14,7 @@ async def main_page():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Báo cáo phân tích & Mô phỏng biến động giá cổ phiếu 365 ngày</title>
+        <title>Mô phỏng biến động giá cổ phiếu 365 ngày</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
@@ -673,7 +673,7 @@ async def main_page():
                     <span class="p-2.5 bg-emerald-100 text-emerald-700 rounded-xl font-bold"><i class="fa-solid fa-newspaper"></i></span>
                     <div>
                         <h2 class="text-xl font-bold text-gray-900">5. Kết luận & Mở rộng</h2>
-                        <p class="text-xs text-gray-500">Đánh giá tổng quan dự án đồ án và hướng phát triển ứng dụng thực tế</p>
+                        <p class="text-xs text-gray-500">Đánh giá tổng quan dự án đồ án</p>
                     </div>
                 </div>
 
